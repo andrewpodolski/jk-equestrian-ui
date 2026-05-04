@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useMemo, useState } from 'react';
 import { FadeUp } from '@/components/ui/FadeUp';
 import messages from '@/i18n/messages/pl.json';
 
@@ -13,9 +16,53 @@ const horses = [
   { key: 'daisy',   ...m.horses.daisy },
   { key: 'thunder', ...m.horses.thunder },
   { key: 'cleo',    ...m.horses.cleo },
-];
+] as const;
+
+type FilterKey =
+  | 'all'
+  | 'beginner'
+  | 'children'
+  | 'intermediate'
+  | 'advanced'
+  | 'dressage'
+  | 'jumping';
+
+function horseMatchesFilter(
+  horse: (typeof horses)[number],
+  filter: FilterKey,
+  f: typeof m.filter,
+): boolean {
+  if (filter === 'all') return true;
+  const { discipline, level } = horse;
+  switch (filter) {
+    case 'beginner':
+      return (
+        level === f.beginner ||
+        discipline === f.beginner ||
+        discipline === f.children
+      );
+    case 'children':
+      return discipline === f.children;
+    case 'intermediate':
+      return level === f.intermediate || level === 'Wszystkie poziomy';
+    case 'advanced':
+      return level === f.advanced || level === 'Wszystkie poziomy';
+    case 'dressage':
+      return discipline === f.dressage || discipline === 'Wszechstronny';
+    case 'jumping':
+      return discipline === f.jumping || discipline === 'Wszechstronny';
+    default:
+      return true;
+  }
+}
 
 export default function HorsesPage() {
+  const [activeFilter, setActiveFilter] = useState<FilterKey>('all');
+
+  const filteredHorses = useMemo(
+    () => horses.filter((horse) => horseMatchesFilter(horse, activeFilter, m.filter)),
+    [activeFilter],
+  );
   return (
     <>
       {/* ── Page Hero ── */}
@@ -39,22 +86,35 @@ export default function HorsesPage() {
       <section className="bg-blue-dark border-t border-gold/10 sticky top-[72px] z-50">
         <div className="max-w-6xl mx-auto px-10 lg:px-16 py-4 flex items-center gap-3 overflow-x-auto scrollbar-none">
           <span className="shrink-0 text-[0.62rem] tracking-[0.18em] uppercase text-cream/40">{m.filter.label}</span>
-          {([
-            ['all',          m.filter.all],
-            ['beginner',     m.filter.beginner],
-            ['children',     m.filter.children],
-            ['intermediate', m.filter.intermediate],
-            ['advanced',     m.filter.advanced],
-            ['dressage',     m.filter.dressage],
-            ['jumping',      m.filter.jumping],
-          ] as [string, string][]).map(([key, label]) => (
-            <button
-              key={key}
-              className="shrink-0 text-[0.68rem] tracking-[0.12em] uppercase px-4 py-1.5 rounded-[2px] border border-gold/20 text-cream/60 hover:border-gold hover:text-gold transition-colors duration-200 cursor-pointer bg-transparent first-of-type:border-gold first-of-type:text-gold"
-            >
-              {label}
-            </button>
-          ))}
+          {(
+            [
+              ['all', m.filter.all],
+              ['beginner', m.filter.beginner],
+              ['children', m.filter.children],
+              ['intermediate', m.filter.intermediate],
+              ['advanced', m.filter.advanced],
+              ['dressage', m.filter.dressage],
+              ['jumping', m.filter.jumping],
+            ] as const satisfies readonly (readonly [FilterKey, string])[]
+          ).map(([key, label]) => {
+            const isActive = activeFilter === key;
+            return (
+              <button
+                key={key}
+                type="button"
+                aria-pressed={isActive}
+                onClick={() => setActiveFilter(key)}
+                className={[
+                  'shrink-0 text-[0.68rem] tracking-[0.12em] uppercase px-4 py-1.5 rounded-[2px] border transition-colors duration-200 cursor-pointer bg-transparent',
+                  isActive
+                    ? 'border-gold text-gold'
+                    : 'border-gold/20 text-cream/60 hover:border-gold hover:text-gold',
+                ].join(' ')}
+              >
+                {label}
+              </button>
+            );
+          })}
         </div>
       </section>
 
@@ -62,7 +122,7 @@ export default function HorsesPage() {
       <section className="bg-offwhite py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-10 lg:px-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
-            {horses.map((horse) => (
+            {filteredHorses.map((horse) => (
               <FadeUp key={horse.key} threshold={0.05}>
                 <article className="group bg-white rounded-[2px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-400">
                   <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-blue-dark to-blue-mid overflow-hidden">

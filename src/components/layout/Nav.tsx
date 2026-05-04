@@ -13,17 +13,18 @@ export function Nav() {
 
   const isHome = pathname === "/";
 
+  // Close hamburger on route change (defer setState — sync setState in effects is disallowed by eslint)
+  useEffect(() => {
+    const id = window.setTimeout(() => setMenuOpen(false), 0);
+    return () => window.clearTimeout(id);
+  }, [pathname]);
+
   useEffect(() => {
     if (!isHome) return;
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
-
-  // Close hamburger on route change
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
 
   const links = [
     { href: "/", label: formatMessage({ id: "nav.home" }) },

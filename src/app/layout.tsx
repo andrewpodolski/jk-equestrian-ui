@@ -21,7 +21,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Silvermane Equestrian — Szkoła jazdy konnej, Piaseczno",
+  title: "JK Warszawa — Szkoła jazdy konnej, Warszawa",
   description:
     "Prestiżowy ośrodek jeździecki w regionie warszawskim. Lekcje jazdy konnej dla dzieci i dorosłych, obozy letnie, ujeżdżenie i skoki przez przeszkody.",
 };
