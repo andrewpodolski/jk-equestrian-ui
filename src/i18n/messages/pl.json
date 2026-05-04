@@ -1,0 +1,390 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "horses": "Nasze konie",
+    "facilities": "Infrastruktura",
+    "team": "Zespół",
+    "contact": "Kontakt",
+    "contactCta": "Napisz do nas"
+  },
+  "hero": {
+    "eyebrow": "Zał. 1998 · Piaseczno, Mazowsze",
+    "title": "Gdzie {emphasis} spotyka siodło",
+    "titleEmphasis": "pasja",
+    "subtitle": "W sercu mazowieckiej wsi, tuż na południe od Warszawy, Silvermane od ponad 25 lat jest domem dla jeźdźców w każdym wieku i na każdym poziomie zaawansowania. Od pierwszej lekcji dziecka po szlifowanie warsztatu doświadczonego zawodnika — tu zaczyna się prawdziwa jeździecka przygoda.",
+    "ctaPrimary": "Poznaj nasze konie",
+    "ctaSecondary": "Zwiedzaj infrastrukturę"
+  },
+  "stats": {
+    "horses": "Koni",
+    "horsesCount": "40+",
+    "experience": "Lat doświadczenia",
+    "experienceCount": "25+",
+    "trainers": "Instruktorów",
+    "trainersCount": "8",
+    "arenas": "Ujeżdżalnie",
+    "arenasCount": "3"
+  },
+  "about": {
+    "eyebrow": "Nasza historia",
+    "title": "Coś więcej niż",
+    "titleEmphasis": "szkoła jazdy",
+    "p1": "Silvermane Equestrian powstało w Piasecznie w 1998 roku jako mała rodzinna stajnia — trzy konie, jedna ujeżdżalnia i głębokie przekonanie, że jazda konna zmienia ludzi. Dziś jesteśmy jednym z najbardziej cenionych ośrodków jeździeckich w regionie warszawskim.",
+    "p2": "Dom dla ponad 40 koni, ośmiu oddanych instruktorów i społeczności jeźdźców, którzy wracają do nas sezon po sezonie — niektórzy z nich przyprowadzają już własne dzieci — Silvermane to miejsce zbudowane na cierpliwości, postępie i autentycznej miłości do konia.",
+    "cta": "Poznaj nasz zespół",
+    "badge": "Lat doskonałości",
+    "badgeValue": "25+"
+  },
+  "herd": {
+    "eyebrow": "Nasza stajnia",
+    "title": "Poznaj część naszych",
+    "titleEmphasis": "40 koni",
+    "cta": "Zobacz wszystkie konie"
+  },
+  "horses": {
+    "apollo": {
+      "name": "Apollo",
+      "breed": "Koń wielkopolski · 10 lat",
+      "temperament": "Skupiony i wrażliwy",
+      "discipline": "Ujeżdżenie",
+      "level": "Zaawansowany"
+    },
+    "luna": {
+      "name": "Luna",
+      "breed": "Koń arabski · 8 lat",
+      "temperament": "Łagodna i cierpliwa",
+      "discipline": "Początkujący",
+      "level": "Wszystkie poziomy"
+    },
+    "storm": {
+      "name": "Storm",
+      "breed": "Irish Sport · 12 lat",
+      "temperament": "Śmiały i energiczny",
+      "discipline": "Skoki",
+      "level": "Średniozaawansowany"
+    },
+    "bella": {
+      "name": "Bella",
+      "breed": "Haflinger · 7 lat",
+      "temperament": "Spokojny i ufny",
+      "discipline": "Dzieci",
+      "level": "Początkujący"
+    },
+    "maestro": {
+      "name": "Maestro",
+      "breed": "Lusitano · 14 lat",
+      "temperament": "Ekspresyjny i mocny",
+      "discipline": "Ujeżdżenie",
+      "level": "Zaawansowany"
+    },
+    "daisy": {
+      "name": "Daisy",
+      "breed": "Kuc walijski · 9 lat",
+      "temperament": "Wesoły i wybaczający",
+      "discipline": "Dzieci",
+      "level": "Początkujący"
+    },
+    "thunder": {
+      "name": "Thunder",
+      "breed": "KWPN · 9 lat",
+      "temperament": "Skoczny i atletyczny",
+      "discipline": "Skoki",
+      "level": "Zaawansowany"
+    },
+    "cleo": {
+      "name": "Cleo",
+      "breed": "Trakeń · 11 lat",
+      "temperament": "Uczciwy i chętny do pracy",
+      "discipline": "Wszechstronny",
+      "level": "Średniozaawansowany"
+    }
+  },
+  "filter": {
+    "label": "Filtruj:",
+    "all": "Wszystkie",
+    "beginner": "Początkujący",
+    "children": "Dzieci",
+    "intermediate": "Średniozaawansowany",
+    "advanced": "Zaawansowany",
+    "dressage": "Ujeżdżenie",
+    "jumping": "Skoki"
+  },
+  "team": {
+    "eyebrow": "Ludzie",
+    "title": "Nasi",
+    "titleEmphasis": "instruktorzy",
+    "subtitle": "Każdy instruktor wnosi unikalne doświadczenie — od startów na arenie międzynarodowej po jazdę terapeutyczną — łączy ich wspólna pasja do koni i zaangażowanie w rozwój każdego jeźdźca.",
+    "trainers": {
+      "anna": {
+        "name": "Anna Kowalska",
+        "title": "Dyrektor szkoły i główny instruktor",
+        "bio": "25 lat w sportowym ujeżdżeniu. Anna założyła Silvermane z przekonaniem, że każdy jeździec zasługuje na cierpliwe, progresywne szkolenie oparte na zaufaniu — nie na przymusie.",
+        "tags": ["Ujeżdżenie", "Zaawansowani"]
+      },
+      "marek": {
+        "name": "Marek Nowak",
+        "title": "Instruktor skoków",
+        "bio": "Były członek reprezentacji Polski w skokach przez przeszkody. Specjalizuje się w budowaniu pewności jeźdźca — od pierwszych patyków na ziemi po kursy do 1,20 m.",
+        "tags": ["Skoki", "Cross-country"]
+      },
+      "zofia": {
+        "name": "Zofia Wiśniewska",
+        "title": "Kierownik programu dla dzieci",
+        "bio": "Certyfikowana w zakresie uczenia wspomaganego przez konia, Zofia prowadzi program Młodych Jeźdźców i obozy letnie z nieskończoną energią i talentem do pracy z najmłodszymi.",
+        "tags": ["Dzieci", "Obozy", "Początkujący"]
+      },
+      "piotr": {
+        "name": "Piotr Zając",
+        "title": "Instruktor pracy płaskiej i młodych koni",
+        "bio": "Piotr od dekady pracuje z młodymi końmi, rozwijając ich przepuszczalność i lekkość. Wnosi klasyczne podejście do pracy płaskiej, które przynosi korzyści jeźdźcom na każdym poziomie.",
+        "tags": ["Praca płaska", "Młode konie", "Średniozaawansowani"]
+      },
+      "marta": {
+        "name": "Marta Lewandowska",
+        "title": "Specjalistka dla dorosłych początkujących",
+        "bio": "Marta ma wyjątkowy dar uczenia dorosłych, którzy zaczynają od zera lub są zdenerwowani. Jej spokojne, metodyczne podejście pomaga szybko zbudować pewność i solidne podstawy techniczne.",
+        "tags": ["Dorośli", "Początkujący", "Zdenerwowani jeźdźcy"]
+      },
+      "tomasz": {
+        "name": "Tomasz Bąk",
+        "title": "Starszy instruktor jazdy konnej",
+        "bio": "18 lat doświadczenia dydaktycznego w Polsce i Niemczech. Tomasz stosuje metodyczne, skoncentrowane na jeźdźcu podejście — pracuje głównie z dorosłymi na poziomie średniozaawansowanym i zaawansowanym.",
+        "tags": ["Średniozaawansowani", "Zaawansowani", "Dorośli"]
+      },
+      "karolina": {
+        "name": "Karolina Wróbel",
+        "title": "Instruktor jazdy terapeutycznej",
+        "bio": "Certyfikowana w hipoterapii i jeździe terapeutycznej, Karolina prowadzi nasz program jeździectwa adaptacyjnego łącząc profesjonalną wiedzę z autentyczną troską o każdego uczestnika.",
+        "tags": ["Terapeutyczna", "Hipoterapia", "Adaptacyjna"]
+      }
+    },
+    "stableTeam": {
+      "eyebrow": "Za kulisami",
+      "title": "Ekipa",
+      "titleEmphasis": "stajenna",
+      "intro": "Nasze konie są tak szczęśliwe, jak szczęśliwi są ludzie, którzy każdego dnia się nimi opiekują. Ekipa stajenna to kręgosłup Silvermane — oddana, doświadczona i głęboko zaangażowana w dobrostan koni.",
+      "krzysztof": { "name": "Krzysztof Malik", "role": "Główny stajenny" },
+      "agnieszka": { "name": "Agnieszka Duda", "role": "Starszy stajenny" },
+      "lukasz": { "name": "Łukasz Kowal", "role": "Kierownik stajni" },
+      "natalia": { "name": "Natalia Pawlak", "role": "Oficer dobrostanu koni" }
+    },
+    "values": {
+      "eyebrow": "Co nami kieruje",
+      "title": "Nasza",
+      "titleEmphasis": "filozofia",
+      "horse": {
+        "num": "01",
+        "name": "Koń na pierwszym miejscu",
+        "desc": "Każda decyzja zaczyna się od dobrostanu konia. Szczęśliwe, zdrowe konie tworzą lepszych jeźdźców i bardziej satysfakcjonujące partnerstwo."
+      },
+      "learning": {
+        "num": "02",
+        "name": "Progresywna nauka",
+        "desc": "Wierzymy w budowanie solidnych podstaw przed przejściem do wyższego poziomu. Żaden jeździec nie jest popędzany — każda umiejętność jest wypracowywana cierpliwą, konsekwentną pracą."
+      },
+      "openToAll": {
+        "num": "03",
+        "name": "Otwartość dla każdego",
+        "desc": "Niezależnie od tego, czy masz pięć czy pięćdziesiąt pięć lat, czy jesteś zalękniony czy ambicjonalny — w Silvermane jest miejsce dla Ciebie. Jazda konna jest dla wszystkich."
+      }
+    }
+  },
+  "facilities": {
+    "eyebrow": "Nasza baza",
+    "title": "Infrastruktura",
+    "titleEmphasis": "światowej klasy",
+    "pageDesc": "Każdy zakątek Silvermane został zaprojektowany z myślą o koniu i jeźdźcu — zapewniając najlepsze możliwe warunki do nauki, zawodów i po prostu przebywania wśród koni.",
+    "indoor": {
+      "tag": "Ujeżdżalnia · 01",
+      "name": "Kryta ujeżdżalnia",
+      "desc": "Nasza flagowa kryta ujeżdżalnia o wymiarach 60 × 20 m to serce Silvermane. W pełni oświetlona i klimatyzowana, umożliwia jazdę przez cały rok — niezależnie od pogody, co w naszym regionie ma kluczowe znaczenie.",
+      "specs": [
+        "Wymiary 60 × 20 m — standard zawodów",
+        "Profesjonalna nawierzchnia piasku i gumy",
+        "Pełne oświetlenie LED",
+        "Galeria widokowa z 40 miejscami",
+        "System nagłośnienia do muzyki ujeżdżeniowej"
+      ]
+    },
+    "outdoor": {
+      "tag": "Ujeżdżalnia · 02",
+      "name": "Zewnętrzna ujeżdżalnia zawodnicza",
+      "desc": "Nasza ujeżdżalnia zewnętrzna o wymiarach 80 × 40 m spełnia standardy zawodnicze. Posiada pierwszorzędną nawierzchnię piaskową, która doskonale odprowadza wodę i pozostaje równomierna w każdych warunkach.",
+      "specs": [
+        "80 × 40 m — standard zawodów",
+        "Nawierzchnia z piasku kwarcowego",
+        "Stałe litery i markery ujeżdżeniowe",
+        "Przenośny sprzęt do trasy skoków",
+        "Elektroniczna tablica wyników"
+      ]
+    },
+    "stables": {
+      "tag": "Stajnia",
+      "name": "Nowoczesny blok stajenny",
+      "desc": "50 przestronnych boksów spełniających najwyższe standardy dobrostanu zwierząt. Każdy koń w Silvermane żyje w komforcie — z naturalnym światłem, wentylacją i troskliwą codzienną opieką.",
+      "specs": [
+        "50 indywidualnych boksów wolnostojących",
+        "Automatyczne pojniki w każdym boksie",
+        "Pełna czyszczalnia i bezpieczna przechowalna",
+        "Myjnie z ciepłą i zimną wodą",
+        "Monitoring CCTV 24h"
+      ]
+    },
+    "crossCountry": {
+      "tag": "Cross-country",
+      "name": "Trasa cross-country",
+      "desc": "Rozciągająca się na 12 hektarach naturalnego terenu trasa cross-country oferuje 28 stałych przeszkód na trzech poziomach trudności — idealna do treningu i budowania pewności w zróżnicowanym terenie.",
+      "specs": [
+        "28 stałych przeszkód — 3 poziomy trudności",
+        "12 hektarów naturalnego terenu",
+        "Kompleks wodny i otwarty rów",
+        "Utrzymywana przez cały rok"
+      ]
+    },
+    "amenities": {
+      "eyebrow": "Wszystko inne",
+      "title": "Uzupełniająca",
+      "titleEmphasis": "infrastruktura",
+      "lounge": {
+        "name": "Salon widokowy i kawiarnia",
+        "desc": "Ciepłe, przyjazne miejsce z widokiem na krytą ujeżdżalnię. Ciesz się kawą i lekkim jedzeniem, obserwując lekcje lub czekając na swojego jeźdźca."
+      },
+      "paddocks": {
+        "name": "Padoki i pastwiska",
+        "desc": "14 indywidualnych padoków i 6 pastwisk grupowych zapewnia koniom codzienne wyjście na bezpieczne, zadbane pola z wiatami i wodą."
+      },
+      "parking": {
+        "name": "Parking i miejsce dla przyczep",
+        "desc": "Duży parking z wyznaczonym miejscem do manewrowania przyczepami konnymi. Łatwy dojazd bezpośrednio na teren stajni."
+      },
+      "solarium": {
+        "name": "Solarium dla koni",
+        "desc": "Profesjonalne solarium do suszenia i rozgrzewania koni po wysiłku — szczególnie cenne w chłodniejszych miesiącach."
+      },
+      "vet": {
+        "name": "Stanowisko dla kowala i weterynarza",
+        "desc": "Dedykowane, dobrze oświetlone stanowisko do wizyt kowalskich i weterynaryjnych — zaprojektowane z myślą o bezpieczeństwie i komforcie."
+      },
+      "warmUp": {
+        "name": "Strefa rozgrzewki zawodniczej",
+        "desc": "Ujeżdżalnia rozgrzewkowa przy głównych arenach, używana do treningu przed zawodami i kliniki."
+      }
+    }
+  },
+  "quote": {
+    "text": "Koń jest lustrem twojej duszy — i czasem możesz nie lubić tego, co w nim widzisz, ale koń nie kłamie.",
+    "author": "— Marta L., jeździec Silvermane od 2017 roku"
+  },
+  "cta": {
+    "home": {
+      "title": "Gotowy, by zacząć swoją",
+      "titleEmphasis": "jeździecką przygodę?",
+      "body": "Niezależnie od tego, czy pytasz o siebie, czy o dziecko — nasz zespół odpowie na każde pytanie i pomoże znaleźć odpowiedni program. Doświadczenie jeździeckie nie jest wymagane.",
+      "primary": "Napisz do nas",
+      "secondary": "+48 609 534 365"
+    },
+    "horses": {
+      "title": "Chcesz jeździć jednym z",
+      "titleEmphasis": "naszych koni?",
+      "body": "Napisz nam o swoim poziomie i celach, a my dopasujemy odpowiedniego konia i instruktora od pierwszego dnia.",
+      "primary": "Skontaktuj się",
+      "secondary": "Poznaj infrastrukturę"
+    },
+    "facilities": {
+      "title": "Przekonaj się",
+      "titleEmphasis": "na własne oczy",
+      "body": "Zapraszamy na zwiedzanie — skontaktuj się z nami, aby umówić wizytę w stajni i poznać niektóre z naszych koni.",
+      "primary": "Umów wizytę",
+      "secondary": "Poznaj nasze konie"
+    },
+    "team": {
+      "title": "Chcesz trenować z",
+      "titleEmphasis": "naszym zespołem?",
+      "body": "Skontaktuj się z nami, a my dopasujemy odpowiedniego instruktora do Twoich celów i poziomu doświadczenia.",
+      "primary": "Skontaktuj się",
+      "secondary": "Poznaj nasze konie"
+    }
+  },
+  "contact": {
+    "eyebrow": "Skontaktuj się",
+    "pageTitle": "Napisz",
+    "pageTitleEmphasis": "do nas",
+    "pageDesc": "Czy jesteś gotowy na rezerwację pierwszej lekcji, czy po prostu chcesz zajrzeć — chętnie usłyszymy od Ciebie.",
+    "form": {
+      "eyebrow": "Wyślij wiadomość",
+      "title": "Odpiszemy",
+      "titleEmphasis": "jak najszybciej",
+      "intro": "Użyj tego formularza, aby zapytać o lekcje, stajnię, wizyty lub o cokolwiek innego. Zazwyczaj odpowiadamy w ciągu jednego dnia roboczego.",
+      "name": "Imię i nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "email": "Adres e-mail",
+      "emailPlaceholder": "jan@przyklad.pl",
+      "phone": "Numer telefonu",
+      "phoneOptional": "(opcjonalne)",
+      "phonePlaceholder": "+48 000 000 000",
+      "subject": "Temat",
+      "subjectPlaceholder": "Wybierz temat...",
+      "subjects": {
+        "lessons": "Lekcje jazdy konnej",
+        "children": "Program dla dzieci",
+        "livery": "Zapytanie o stajnię",
+        "visit": "Umów wizytę",
+        "other": "Inne"
+      },
+      "message": "Wiadomość",
+      "messagePlaceholder": "Napisz kilka słów o sobie i o tym, czego szukasz...",
+      "submit": "Wyślij zapytanie"
+    },
+    "info": {
+      "eyebrow": "Znajdź nas",
+      "title": "Silvermane",
+      "titleEmphasis": "Equestrian",
+      "address": {
+        "label": "Adres",
+        "value": "Kinetyczna, 02-198 Warszawa"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+48 609 534 365"
+      },
+      "phone2": {
+        "label": "Telefon 2",
+        "value": "+48 730 310 910"
+      },
+      "email": {
+        "label": "E-mail",
+        "value": "rkchrobry@gmail.com"
+      },
+      "hours": {
+        "label": "Godziny otwarcia",
+        "weekdays": "Poniedziałek – Piątek",
+        "weekdayHours": "8:00 – 20:00",
+        "weekend": "Sobota – Niedziela",
+        "weekendHours": "8:00 – 18:00"
+      },
+      "mapIframeTitle": "Lokalizacja na mapie Google"
+    }
+  },
+  "footer": {
+    "desc": "Prestiżowy ośrodek jeździecki w regionie warszawskim, zbudowany na cierpliwości, postępie i miłości do konia. Dom dla 40 koni i społeczności jeźdźców od 1998 roku.",
+    "explore": "Odkryj",
+    "ridingLabel": "Jazda",
+    "contact": "Kontakt",
+    "links": {
+      "home": "Strona główna",
+      "horses": "Nasze konie",
+      "facilities": "Infrastruktura",
+      "team": "Nasz zespół",
+      "contact": "Kontakt"
+    },
+    "riding": {
+      "beginners": "Początkujący",
+      "children": "Dzieci",
+      "advanced": "Zaawansowani",
+      "private": "Lekcje indywidualne",
+      "camps": "Obozy letnie"
+    },
+    "copyright": "© 2026 Silvermane Equestrian. Wszelkie prawa zastrzeżone.",
+    "tagline": "Zaprojektowane z troską o każdego jeźdźca"
+  }
+}

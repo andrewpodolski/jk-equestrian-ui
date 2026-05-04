@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* ── Design tokens ──────────────────────────────────── */
+@theme {
+  --color-blue-dark:  #03396c;
+  --color-blue-mid:   #04508f;
+  --color-blue-soft:  #1a6aab;
+  --color-cream:      #F5EFE0;
+  --color-cream-dark: #E8DFCA;
+  --color-offwhite:   #FAFAF5;
+  --color-gold:       #C9A84C;
+  --color-gold-light: #E2C97A;
+  --color-text-dark:  #0e1e2e;
+  --color-text-mid:   #3a4a5a;
+  --color-text-muted: #6a7a8a;
+
+  --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  var(--font-dm-sans),   'DM Sans', system-ui, sans-serif;
+
+  --animate-slow-zoom:    slow-zoom    20s ease-in-out infinite alternate;
+  --animate-scroll-pulse: scroll-pulse 2s  ease-in-out infinite;
+}
+
+/* ── Keyframes ──────────────────────────────────────── */
+@keyframes slow-zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.1); }
+}
+
+/* ── Base ───────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--color-offwhite);
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+}
+
+/* ── Fade-up animation ──────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Section eyebrow rule line ──────────────────────── */
+.eyebrow-line::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+}
