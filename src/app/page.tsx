@@ -1,18 +1,26 @@
-import { LocaleLink } from '@/components/ui/LocaleLink';
-import { FadeUp } from '@/components/ui/FadeUp';
-import type { Locale } from '@/i18n/config';
-import { getNestedMessages } from '@/i18n/server';
+import { LocaleLink } from "@/components/ui/LocaleLink";
+import { FadeUp } from "@/components/ui/FadeUp";
+import type { Locale } from "@/i18n/config";
+import { getNestedMessages } from "@/i18n/server";
 
 async function HomePageContent({ locale }: { locale: Locale }) {
   const m = await getNestedMessages(locale);
 
   const horses = [
-    m.horses.apollo, m.horses.luna, m.horses.storm, m.horses.bella,
-    m.horses.maestro, m.horses.daisy, m.horses.thunder, m.horses.cleo,
+    m.horses.apollo,
+    m.horses.luna,
+    m.horses.storm,
+    m.horses.bella,
+    m.horses.maestro,
+    m.horses.daisy,
+    m.horses.thunder,
+    m.horses.cleo,
   ];
 
   const trainers = [
-    m.team.trainers.anna, m.team.trainers.marek, m.team.trainers.zofia,
+    m.team.trainers.anna,
+    m.team.trainers.marek,
+    m.team.trainers.zofia,
   ];
   return (
     <>
@@ -20,12 +28,18 @@ async function HomePageContent({ locale }: { locale: Locale }) {
       <section className="relative min-h-[100svh] overflow-hidden md:min-h-screen md:flex md:items-end md:pb-24 lg:pb-32">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-dark via-blue-mid to-[#0a3d6e]" />
-        <div className="absolute inset-0 opacity-20"
-          style={{ backgroundImage: 'radial-gradient(circle at 30% 60%, #C9A84C22 0%, transparent 60%)' }}
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 30% 60%, #C9A84C22 0%, transparent 60%)",
+          }}
         />
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-[0.6rem] tracking-[0.25em] uppercase text-cream/40">{m.hero.scrollHint}</span>
+        {/* Scroll indicator — desktop */}
+        <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex lg:bottom-8">
+          <span className="text-[0.6rem] tracking-[0.25em] uppercase text-cream/40">
+            {m.hero.scrollHint}
+          </span>
           <div className="w-px h-12 bg-gold/40 animate-scroll-pulse origin-top" />
         </div>
 
@@ -69,15 +83,21 @@ async function HomePageContent({ locale }: { locale: Locale }) {
       {/* ── Stats ── */}
       <section className="bg-blue-dark border-t border-gold/10">
         <div className="max-w-6xl mx-auto px-10 lg:px-16 py-12 grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {([
-            [m.stats.horsesCount,     m.stats.horses],
-            [m.stats.experienceCount, m.stats.experience],
-            [m.stats.trainersCount,   m.stats.trainers],
-            [m.stats.arenasCount,     m.stats.arenas],
-          ] as [string, string][]).map(([count, label]) => (
+          {(
+            [
+              [m.stats.horsesCount, m.stats.horses],
+              [m.stats.experienceCount, m.stats.experience],
+              [m.stats.trainersCount, m.stats.trainers],
+              [m.stats.arenasCount, m.stats.arenas],
+            ] as [string, string][]
+          ).map(([count, label]) => (
             <div key={label} className="text-center">
-              <div className="font-serif text-[2.8rem] font-semibold text-gold leading-none mb-1">{count}</div>
-              <div className="text-[0.7rem] tracking-[0.16em] uppercase text-cream/45">{label}</div>
+              <div className="font-serif text-[2.8rem] font-semibold text-gold leading-none mb-1">
+                {count}
+              </div>
+              <div className="text-[0.7rem] tracking-[0.16em] uppercase text-cream/45">
+                {label}
+              </div>
             </div>
           ))}
         </div>
@@ -92,10 +112,18 @@ async function HomePageContent({ locale }: { locale: Locale }) {
                 {m.about.eyebrow}
               </p>
               <h2 className="font-serif text-[clamp(2.2rem,5vw,3.5rem)] font-semibold text-text-dark leading-[1.12] mb-8">
-                {m.about.title}<br /><em className="text-gold not-italic">{m.about.titleEmphasis}</em>
+                {m.about.title}
+                <br />
+                <em className="text-gold not-italic">
+                  {m.about.titleEmphasis}
+                </em>
               </h2>
-              <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-5 font-light">{m.about.p1}</p>
-              <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-10 font-light">{m.about.p2}</p>
+              <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-5 font-light">
+                {m.about.p1}
+              </p>
+              <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-10 font-light">
+                {m.about.p2}
+              </p>
               <LocaleLink
                 href="/team"
                 className="inline-flex items-center gap-3 text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark border-b border-blue-dark/30 pb-1 no-underline hover:border-gold hover:text-gold transition-colors duration-200"
@@ -110,8 +138,12 @@ async function HomePageContent({ locale }: { locale: Locale }) {
               {/* Placeholder for image */}
               <div className="w-full aspect-[4/5] bg-gradient-to-br from-blue-mid to-blue-dark rounded-[2px] flex items-end p-8">
                 <div className="bg-gold text-blue-dark px-6 py-4 text-center">
-                  <div className="font-serif text-[3rem] font-semibold leading-none">{m.about.badgeValue}</div>
-                  <div className="text-[0.65rem] tracking-[0.16em] uppercase mt-1">{m.about.badge}</div>
+                  <div className="font-serif text-[3rem] font-semibold leading-none">
+                    {m.about.badgeValue}
+                  </div>
+                  <div className="text-[0.65rem] tracking-[0.16em] uppercase mt-1">
+                    {m.about.badge}
+                  </div>
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 border border-gold/30 rounded-[2px] -z-10" />
@@ -128,7 +160,11 @@ async function HomePageContent({ locale }: { locale: Locale }) {
                   {m.herd.eyebrow}
                 </p>
                 <h2 className="font-serif text-[clamp(2.2rem,5vw,3.5rem)] font-semibold text-text-dark leading-[1.12]">
-                  {m.herd.title}<br /><em className="text-gold not-italic">{m.herd.titleEmphasis}</em>
+                  {m.herd.title}
+                  <br />
+                  <em className="text-gold not-italic">
+                    {m.herd.titleEmphasis}
+                  </em>
                 </h2>
               </div>
               <LocaleLink
@@ -144,15 +180,25 @@ async function HomePageContent({ locale }: { locale: Locale }) {
               <FadeUp key={horse.name} threshold={0.05}>
                 <div className="group bg-offwhite rounded-[2px] overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-blue-dark/80 to-blue-mid/60 flex items-center justify-center">
-                    <span className="font-serif text-[3rem] text-cream/30">{horse.name[0]}</span>
+                    <span className="font-serif text-[3rem] text-cream/30">
+                      {horse.name[0]}
+                    </span>
                   </div>
                   <div className="p-5">
                     <div className="flex justify-between items-start mb-1">
-                      <h3 className="font-serif text-[1.1rem] font-semibold text-text-dark">{horse.name}</h3>
-                      <span className="text-[0.6rem] tracking-[0.1em] uppercase text-gold bg-gold/10 px-2 py-0.5 rounded-[1px]">{horse.discipline}</span>
+                      <h3 className="font-serif text-[1.1rem] font-semibold text-text-dark">
+                        {horse.name}
+                      </h3>
+                      <span className="text-[0.6rem] tracking-[0.1em] uppercase text-gold bg-gold/10 px-2 py-0.5 rounded-[1px]">
+                        {horse.discipline}
+                      </span>
                     </div>
-                    <p className="text-[0.75rem] text-text-muted mb-2">{horse.breed}</p>
-                    <p className="text-[0.72rem] text-text-muted/70 italic">{horse.temperament}</p>
+                    <p className="text-[0.75rem] text-text-muted mb-2">
+                      {horse.breed}
+                    </p>
+                    <p className="text-[0.72rem] text-text-muted/70 italic">
+                      {horse.temperament}
+                    </p>
                   </div>
                 </div>
               </FadeUp>
@@ -168,7 +214,8 @@ async function HomePageContent({ locale }: { locale: Locale }) {
                 {m.team.eyebrow}
               </p>
               <h2 className="font-serif text-[clamp(2.2rem,5vw,3.5rem)] font-semibold text-text-dark leading-[1.12]">
-                {m.team.title} <em className="text-gold not-italic">{m.team.titleEmphasis}</em>
+                {m.team.title}{" "}
+                <em className="text-gold not-italic">{m.team.titleEmphasis}</em>
               </h2>
             </div>
           </FadeUp>
@@ -178,11 +225,19 @@ async function HomePageContent({ locale }: { locale: Locale }) {
               <FadeUp key={trainer.name} threshold={0.05}>
                 <div className="text-center">
                   <div className="w-28 h-28 rounded-full bg-gradient-to-br from-blue-mid to-blue-dark mx-auto mb-5 flex items-center justify-center">
-                    <span className="font-serif text-[2rem] text-cream/60">{trainer.name[0]}</span>
+                    <span className="font-serif text-[2rem] text-cream/60">
+                      {trainer.name[0]}
+                    </span>
                   </div>
-                  <h3 className="font-serif text-[1.15rem] font-semibold text-text-dark mb-1">{trainer.name}</h3>
-                  <p className="text-[0.75rem] text-gold mb-3">{trainer.title}</p>
-                  <p className="text-[0.85rem] text-text-mid leading-[1.7] font-light">{trainer.bio}</p>
+                  <h3 className="font-serif text-[1.15rem] font-semibold text-text-dark mb-1">
+                    {trainer.name}
+                  </h3>
+                  <p className="text-[0.75rem] text-gold mb-3">
+                    {trainer.title}
+                  </p>
+                  <p className="text-[0.85rem] text-text-mid leading-[1.7] font-light">
+                    {trainer.bio}
+                  </p>
                 </div>
               </FadeUp>
             ))}
@@ -202,7 +257,9 @@ async function HomePageContent({ locale }: { locale: Locale }) {
       <section className="bg-blue-dark py-24 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto px-10 lg:px-16 text-center">
-            <div className="font-serif text-[4rem] text-gold/30 leading-none mb-4">"</div>
+            <div className="font-serif text-[4rem] text-gold/30 leading-none mb-4">
+              "
+            </div>
             <blockquote className="font-serif text-[clamp(1.4rem,3vw,2rem)] font-light italic text-cream/85 leading-[1.55] mb-8">
               {m.quote.text}
             </blockquote>
@@ -216,7 +273,11 @@ async function HomePageContent({ locale }: { locale: Locale }) {
         <FadeUp>
           <div className="max-w-3xl mx-auto px-10 lg:px-16 text-center">
             <h2 className="font-serif text-[clamp(2rem,5vw,3.2rem)] font-semibold text-text-dark leading-[1.12] mb-6">
-              {m.cta.home.title}<br /><em className="text-gold not-italic">{m.cta.home.titleEmphasis}</em>
+              {m.cta.home.title}
+              <br />
+              <em className="text-gold not-italic">
+                {m.cta.home.titleEmphasis}
+              </em>
             </h2>
             <p className="text-[0.95rem] text-text-mid leading-[1.85] font-light mb-12 max-w-xl mx-auto">
               {m.cta.home.body}
@@ -229,7 +290,7 @@ async function HomePageContent({ locale }: { locale: Locale }) {
                 {m.cta.home.primary}
               </LocaleLink>
               <a
-                href={`tel:${m.cta.home.secondary.replace(/\s/g, '')}`}
+                href={`tel:${m.cta.home.secondary.replace(/\s/g, "")}`}
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-text-dark border border-text-dark/20 hover:border-gold hover:text-gold px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {m.cta.home.secondary}
@@ -243,9 +304,9 @@ async function HomePageContent({ locale }: { locale: Locale }) {
 }
 
 export default function HomePage() {
-  return HomePageContent({ locale: 'pl' });
+  return HomePageContent({ locale: "pl" });
 }
 
 export function EnHomePage() {
-  return HomePageContent({ locale: 'en' });
+  return HomePageContent({ locale: "en" });
 }
