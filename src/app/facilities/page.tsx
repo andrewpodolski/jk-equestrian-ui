@@ -1,26 +1,28 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/ui/LocaleLink";
 import { FadeUp } from "@/components/ui/FadeUp";
-import messages from "@/i18n/messages/pl.json";
+import type { Locale } from "@/i18n/config";
+import { getNestedMessages } from "@/i18n/server";
 
-const m = messages.facilities;
-const cta = messages.cta.facilities;
+async function FacilitiesPageContent({ locale }: { locale: Locale }) {
+  const messages = await getNestedMessages(locale);
+  const m = messages.facilities;
+  const cta = messages.cta.facilities;
 
-const mainFacilities = [
-  { data: m.indoor, gradient: "from-blue-dark to-blue-mid" },
-  { data: m.outdoor, gradient: "from-[#0a3d6e] to-blue-soft" },
-  { data: m.stables, gradient: "from-blue-mid to-[#0d5fa8]" },
-];
+  const mainFacilities = [
+    { data: m.indoor, gradient: "from-blue-dark to-blue-mid" },
+    { data: m.outdoor, gradient: "from-[#0a3d6e] to-blue-soft" },
+    { data: m.stables, gradient: "from-blue-mid to-[#0d5fa8]" },
+  ];
 
-const amenities = [
-  m.amenities.lounge,
-  m.amenities.paddocks,
-  m.amenities.parking,
-  m.amenities.solarium,
-  m.amenities.vet,
-  m.amenities.warmUp,
-];
+  const amenities = [
+    m.amenities.lounge,
+    m.amenities.paddocks,
+    m.amenities.parking,
+    m.amenities.solarium,
+    m.amenities.vet,
+    m.amenities.warmUp,
+  ];
 
-export default function FacilitiesPage() {
   return (
     <>
       {/* ── Page Hero ── */}
@@ -144,22 +146,30 @@ export default function FacilitiesPage() {
               {cta.body}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
+              <LocaleLink
                 href="/contact"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark bg-gold hover:bg-gold-light px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {cta.primary}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 href="/horses"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-cream border border-cream/30 hover:border-cream/60 px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {cta.secondary}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </FadeUp>
       </section>
     </>
   );
+}
+
+export default function FacilitiesPage() {
+  return FacilitiesPageContent({ locale: 'pl' });
+}
+
+export function EnFacilitiesPage() {
+  return FacilitiesPageContent({ locale: 'en' });
 }

@@ -1,17 +1,18 @@
-import Link from "next/link";
+import { LocaleLink } from "@/components/ui/LocaleLink";
 import { FadeUp } from "@/components/ui/FadeUp";
-import messages from "@/i18n/messages/pl.json";
+import type { Locale } from "@/i18n/config";
+import { getNestedMessages } from "@/i18n/server";
 
-const m = messages.team;
-const cta = messages.cta.team;
+async function TeamPageContent({ locale }: { locale: Locale }) {
+  const messages = await getNestedMessages(locale);
+  const m = messages.team;
+  const cta = messages.cta.team;
 
-const trainers = [m.trainers.anna, m.trainers.karolina];
+  const trainers = [m.trainers.anna, m.trainers.karolina];
 
-const stableTeam = [m.stableTeam.krzysztof, m.stableTeam.agnieszka];
+  const stableTeam = [m.stableTeam.krzysztof, m.stableTeam.agnieszka];
 
-const values = [m.values.horse, m.values.learning, m.values.openToAll];
-
-export default function TeamPage() {
+  const values = [m.values.horse, m.values.learning, m.values.openToAll];
   return (
     <>
       {/* ── Page Hero ── */}
@@ -174,22 +175,30 @@ export default function TeamPage() {
               {cta.body}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
+              <LocaleLink
                 href="/contact"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark bg-gold hover:bg-gold-light px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {cta.primary}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 href="/horses"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-text-dark border border-text-dark/20 hover:border-gold hover:text-gold px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {cta.secondary}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </FadeUp>
       </section>
     </>
   );
+}
+
+export default function TeamPage() {
+  return TeamPageContent({ locale: 'pl' });
+}
+
+export function EnTeamPage() {
+  return TeamPageContent({ locale: 'en' });
 }

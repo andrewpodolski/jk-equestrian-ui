@@ -9,11 +9,13 @@
   },
   "hero": {
     "eyebrow": "Zał. 1998 · Warszawa, Mazowsze",
-    "title": "Gdzie {emphasis} spotyka siodło",
-    "titleEmphasis": "pasja",
+    "title": "Gdzie ",
+    "titleEmphasis": "pasje",
+    "titleSuffix": " spotyka siodło",
     "subtitle": "W sercu mazowieckiej wsi, tuż na południe od Warszawy, JK Warszawa od ponad 25 lat jest domem dla jeźdźców w każdym wieku i na każdym poziomie zaawansowania. Od pierwszej lekcji dziecka po szlifowanie warsztatu doświadczonego zawodnika — tu zaczyna się prawdziwa jeździecka przygoda.",
     "ctaPrimary": "Poznaj nasze konie",
-    "ctaSecondary": "Zwiedzaj infrastrukturę"
+    "ctaSecondary": "Zwiedzaj infrastrukturę",
+    "scrollHint": "Przewiń"
   },
   "stats": {
     "horses": "Koni",
@@ -114,6 +116,7 @@
     "title": "Nasi",
     "titleEmphasis": "instruktorzy",
     "subtitle": "Każdy instruktor wnosi unikalne doświadczenie — od startów na arenie międzynarodowej po jazdę terapeutyczną — łączy ich wspólna pasja do koni i zaangażowanie w rozwój każdego jeźdźca.",
+    "cta": "Poznaj cały zespół",
     "trainers": {
       "anna": {
         "name": "Anna Kowalska",

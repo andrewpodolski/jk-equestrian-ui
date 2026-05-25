@@ -1,0 +1,404 @@
+{
+  "nav": {
+    "home": "Home",
+    "horses": "Our Horses",
+    "facilities": "Facilities",
+    "team": "Team",
+    "contact": "Contact",
+    "contactCta": "Contact Us"
+  },
+  "hero": {
+    "eyebrow": "Est. 1998 · Warsaw, Masovia",
+    "title": "Where ",
+    "titleEmphasis": "passion",
+    "titleSuffix": " meets the saddle",
+    "subtitle": "In the heart of the Masovian countryside, just south of Warsaw, JK Warszawa has been home to riders of all ages and skill levels for over 25 years. From a child’s first lesson to refining the skills of experienced competitors — this is where a true equestrian journey begins.",
+    "ctaPrimary": "Meet Our Horses",
+    "ctaSecondary": "Explore the Facilities",
+    "scrollHint": "Scroll"
+  },
+  "stats": {
+    "horses": "Horses",
+    "horsesCount": "40+",
+    "experience": "Years of Experience",
+    "experienceCount": "25+",
+    "trainers": "Instructors",
+    "trainersCount": "8",
+    "arenas": "Riding Arenas",
+    "arenasCount": "3"
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "title": "More than",
+    "titleEmphasis": "a riding school",
+    "p1": "JK Warszawa was founded in Warsaw in 1998 as a small family stable — three horses, one arena, and a deep belief that horseback riding changes people. Today, we are one of the most respected equestrian centers in the Warsaw region.",
+    "p2": "Home to over 40 horses, eight dedicated instructors, and a community of riders who return season after season — some now bringing their own children — JK Warszawa is a place built on patience, progress, and a genuine love for horses.",
+    "cta": "Meet Our Team",
+    "badge": "Years of Excellence",
+    "badgeValue": "25+"
+  },
+  "herd": {
+    "eyebrow": "Our Stable",
+    "title": "Meet some of our",
+    "titleEmphasis": "40 horses",
+    "cta": "See All Horses"
+  },
+  "horses": {
+    "apollo": {
+      "name": "Apollo",
+      "breed": "Wielkopolski Horse · 10 years old",
+      "temperament": "Focused and sensitive",
+      "discipline": "Dressage",
+      "level": "Advanced"
+    },
+    "luna": {
+      "name": "Luna",
+      "breed": "Arabian Horse · 8 years old",
+      "temperament": "Gentle and patient",
+      "discipline": "Beginner",
+      "level": "All levels"
+    },
+    "storm": {
+      "name": "Storm",
+      "breed": "Irish Sport Horse · 12 years old",
+      "temperament": "Bold and energetic",
+      "discipline": "Jumping",
+      "level": "Intermediate"
+    },
+    "bella": {
+      "name": "Bella",
+      "breed": "Haflinger · 7 years old",
+      "temperament": "Calm and trusting",
+      "discipline": "Children",
+      "level": "Beginner"
+    },
+    "maestro": {
+      "name": "Maestro",
+      "breed": "Lusitano · 14 years old",
+      "temperament": "Expressive and powerful",
+      "discipline": "Dressage",
+      "level": "Advanced"
+    },
+    "daisy": {
+      "name": "Daisy",
+      "breed": "Welsh Pony · 9 years old",
+      "temperament": "Cheerful and forgiving",
+      "discipline": "Children",
+      "level": "Beginner"
+    },
+    "thunder": {
+      "name": "Thunder",
+      "breed": "KWPN · 9 years old",
+      "temperament": "Athletic and agile",
+      "discipline": "Jumping",
+      "level": "Advanced"
+    },
+    "cleo": {
+      "name": "Cleo",
+      "breed": "Trakehner · 11 years old",
+      "temperament": "Honest and eager to work",
+      "discipline": "Versatile",
+      "level": "Intermediate"
+    }
+  },
+  "filter": {
+    "label": "Filter:",
+    "all": "All",
+    "beginner": "Beginner",
+    "children": "Children",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "dressage": "Dressage",
+    "jumping": "Jumping"
+  },
+  "team": {
+    "eyebrow": "People",
+    "title": "Our",
+    "titleEmphasis": "instructors",
+    "subtitle": "Each instructor brings unique experience — from competing internationally to therapeutic riding — united by a shared passion for horses and dedication to every rider’s development.",
+    "cta": "Meet the full team",
+    "trainers": {
+      "anna": {
+        "name": "Anna Kowalska",
+        "title": "School Director & Head Instructor",
+        "bio": "25 years in competitive dressage. Anna founded JK Warszawa with the belief that every rider deserves patient, progressive training built on trust — not force.",
+        "tags": ["Dressage", "Advanced Riders"]
+      },
+      "marek": {
+        "name": "Marek Nowak",
+        "title": "Jumping Instructor",
+        "bio": "Former member of the Polish national show jumping team. Specializes in building rider confidence — from first poles on the ground to courses up to 1.20 m.",
+        "tags": ["Jumping", "Cross-country"]
+      },
+      "zofia": {
+        "name": "Zofia Wiśniewska",
+        "title": "Children’s Program Manager",
+        "bio": "Certified in equine-assisted learning, Zofia leads the Young Riders program and summer camps with endless energy and a natural talent for working with children.",
+        "tags": ["Children", "Camps", "Beginners"]
+      },
+      "piotr": {
+        "name": "Piotr Zając",
+        "title": "Flatwork & Young Horse Instructor",
+        "bio": "Piotr has worked with young horses for over a decade, developing suppleness and lightness. He brings a classical approach to flatwork that benefits riders at every level.",
+        "tags": ["Flatwork", "Young Horses", "Intermediate"]
+      },
+      "marta": {
+        "name": "Marta Lewandowska",
+        "title": "Adult Beginner Specialist",
+        "bio": "Marta has a unique gift for teaching adults starting from zero or feeling nervous. Her calm, methodical approach helps riders quickly build confidence and strong technical foundations.",
+        "tags": ["Adults", "Beginners", "Nervous Riders"]
+      },
+      "tomasz": {
+        "name": "Tomasz Bąk",
+        "title": "Senior Riding Instructor",
+        "bio": "18 years of teaching experience in Poland and Germany. Tomasz uses a methodical, rider-focused approach — mainly working with intermediate and advanced adult riders.",
+        "tags": ["Intermediate", "Advanced", "Adults"]
+      },
+      "karolina": {
+        "name": "Karolina Wróbel",
+        "title": "Therapeutic Riding Instructor",
+        "bio": "Certified in hippotherapy and therapeutic riding, Karolina leads our adaptive riding program, combining professional expertise with genuine care for every participant.",
+        "tags": ["Therapeutic", "Hippotherapy", "Adaptive Riding"]
+      }
+    },
+    "stableTeam": {
+      "eyebrow": "Behind the Scenes",
+      "title": "The Stable",
+      "titleEmphasis": "Crew",
+      "intro": "Our horses are only as happy as the people who care for them every day. The stable crew is the backbone of JK Warszawa — dedicated, experienced, and deeply committed to horse welfare.",
+      "krzysztof": {
+        "name": "Krzysztof Malik",
+        "role": "Head Groom"
+      },
+      "agnieszka": {
+        "name": "Agnieszka Duda",
+        "role": "Senior Groom"
+      },
+      "lukasz": {
+        "name": "Łukasz Kowal",
+        "role": "Stable Manager"
+      },
+      "natalia": {
+        "name": "Natalia Pawlak",
+        "role": "Horse Welfare Officer"
+      }
+    },
+    "values": {
+      "eyebrow": "What Guides Us",
+      "title": "Our",
+      "titleEmphasis": "philosophy",
+      "horse": {
+        "num": "01",
+        "name": "Horse First",
+        "desc": "Every decision begins with the horse’s wellbeing. Happy, healthy horses create better riders and more fulfilling partnerships."
+      },
+      "learning": {
+        "num": "02",
+        "name": "Progressive Learning",
+        "desc": "We believe in building strong foundations before advancing further. No rider is rushed — every skill is developed through patient, consistent work."
+      },
+      "openToAll": {
+        "num": "03",
+        "name": "Open to Everyone",
+        "desc": "Whether you are five or fifty-five, nervous or ambitious — there is a place for you at JK Warszawa. Horse riding is for everyone."
+      }
+    }
+  },
+  "facilities": {
+    "eyebrow": "Our Base",
+    "title": "World-Class",
+    "titleEmphasis": "Facilities",
+    "pageDesc": "Every corner of JK Warszawa has been designed with both horse and rider in mind — providing the best possible environment for learning, competing, and simply being around horses.",
+    "indoor": {
+      "tag": "Arena · 01",
+      "name": "Indoor Riding Arena",
+      "desc": "Our flagship 60 × 20 m indoor arena is the heart of JK Warszawa. Fully lit and climate-controlled, it allows year-round riding regardless of the weather — essential in our region.",
+      "specs": [
+        "60 × 20 m dimensions — competition standard",
+        "Professional sand-and-rubber footing",
+        "Full LED lighting",
+        "40-seat viewing gallery",
+        "Sound system for dressage music"
+      ]
+    },
+    "outdoor": {
+      "tag": "Arena · 02",
+      "name": "Outdoor Competition Arena",
+      "desc": "Our 80 × 40 m outdoor arena meets competition standards. It features premium sand footing with excellent drainage and consistent conditions year-round.",
+      "specs": [
+        "80 × 40 m — competition standard",
+        "Quartz sand footing",
+        "Permanent dressage letters and markers",
+        "Portable jumping equipment",
+        "Electronic scoreboard"
+      ]
+    },
+    "stables": {
+      "tag": "Stable",
+      "name": "Modern Stable Block",
+      "desc": "50 spacious stalls built to the highest animal welfare standards. Every horse at JK Warszawa lives in comfort — with natural light, ventilation, and attentive daily care.",
+      "specs": [
+        "50 individual freestanding stalls",
+        "Automatic waterers in every stall",
+        "Full grooming and secure tack room",
+        "Wash bays with hot and cold water",
+        "24h CCTV monitoring"
+      ]
+    },
+    "crossCountry": {
+      "tag": "Cross-country",
+      "name": "Cross-country Course",
+      "desc": "Stretching across 12 hectares of natural terrain, the cross-country course offers 28 permanent obstacles at three difficulty levels — perfect for training and building confidence in varied terrain.",
+      "specs": [
+        "28 permanent obstacles — 3 difficulty levels",
+        "12 hectares of natural terrain",
+        "Water complex and open ditch",
+        "Maintained year-round"
+      ]
+    },
+    "amenities": {
+      "eyebrow": "Everything Else",
+      "title": "Additional",
+      "titleEmphasis": "Amenities",
+      "lounge": {
+        "name": "Viewing Lounge & Café",
+        "desc": "A warm, welcoming space overlooking the indoor arena. Enjoy coffee and light meals while watching lessons or waiting for your rider."
+      },
+      "paddocks": {
+        "name": "Paddocks & Pastures",
+        "desc": "14 individual paddocks and 6 group pastures provide horses with daily turnout on safe, well-maintained fields with shelters and water."
+      },
+      "parking": {
+        "name": "Parking & Trailer Area",
+        "desc": "Large parking area with dedicated space for horse trailer maneuvering. Easy direct access to the stable grounds."
+      },
+      "solarium": {
+        "name": "Horse Solarium",
+        "desc": "Professional solarium for drying and warming horses after exercise — especially valuable during colder months."
+      },
+      "vet": {
+        "name": "Farrier & Veterinary Station",
+        "desc": "A dedicated, well-lit area for farrier and veterinary visits — designed for safety and comfort."
+      },
+      "warmUp": {
+        "name": "Competition Warm-up Arena",
+        "desc": "Warm-up arena next to the main arenas, used for pre-competition training and clinics."
+      }
+    }
+  },
+  "quote": {
+    "text": "A horse is a mirror to your soul — and sometimes you may not like what you see, but the horse never lies.",
+    "author": "— Marta L., JK Warszawa rider since 2017"
+  },
+  "cta": {
+    "home": {
+      "title": "Ready to begin your",
+      "titleEmphasis": "equestrian journey?",
+      "body": "Whether you’re asking for yourself or your child — our team will answer every question and help you find the right program. No riding experience required.",
+      "primary": "Contact Us",
+      "secondary": "+48 609 534 365"
+    },
+    "horses": {
+      "title": "Want to ride one of",
+      "titleEmphasis": "our horses?",
+      "body": "Tell us about your experience level and goals, and we’ll match you with the right horse and instructor from day one.",
+      "primary": "Get in Touch",
+      "secondary": "Explore the Facilities"
+    },
+    "facilities": {
+      "title": "See it",
+      "titleEmphasis": "for yourself",
+      "body": "We’d love to show you around — contact us to schedule a stable visit and meet some of our horses.",
+      "primary": "Book a Visit",
+      "secondary": "Meet Our Horses"
+    },
+    "team": {
+      "title": "Want to train with",
+      "titleEmphasis": "our team?",
+      "body": "Contact us and we’ll match you with the right instructor for your goals and experience level.",
+      "primary": "Get in Touch",
+      "secondary": "Meet Our Horses"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "pageTitle": "Contact",
+    "pageTitleEmphasis": "Us",
+    "pageDesc": "Whether you’re ready to book your first lesson or simply want to take a look around — we’d love to hear from you.",
+    "form": {
+      "eyebrow": "Send a Message",
+      "title": "We’ll reply",
+      "titleEmphasis": "as soon as possible",
+      "intro": "Use this form to ask about lessons, boarding, visits, or anything else. We usually reply within one business day.",
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phoneOptional": "(optional)",
+      "phonePlaceholder": "+48 000 000 000",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject...",
+      "subjects": {
+        "lessons": "Horse Riding Lessons",
+        "children": "Children’s Program",
+        "livery": "Boarding Inquiry",
+        "visit": "Schedule a Visit",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us a bit about yourself and what you’re looking for...",
+      "submit": "Send Inquiry"
+    },
+    "info": {
+      "eyebrow": "Find Us",
+      "title": "JK Warszawa",
+      "address": {
+        "label": "Address",
+        "value": "Kinetyczna, 02-198 Warsaw"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+48 609 534 365"
+      },
+      "phone2": {
+        "label": "Phone 2",
+        "value": "+48 730 310 910"
+      },
+      "email": {
+        "label": "Email",
+        "value": "rkchrobry@gmail.com"
+      },
+      "hours": {
+        "label": "Opening Hours",
+        "weekdays": "Monday – Friday",
+        "weekdayHours": "8:00 AM – 8:00 PM",
+        "weekend": "Saturday – Sunday",
+        "weekendHours": "8:00 AM – 6:00 PM"
+      },
+      "mapIframeTitle": "Google Maps Location"
+    }
+  },
+  "footer": {
+    "desc": "A prestigious equestrian center in the Warsaw region, built on patience, progress, and love for the horse. Home to 40 horses and a community of riders since 1998.",
+    "explore": "Explore",
+    "ridingLabel": "Riding",
+    "contact": "Contact",
+    "links": {
+      "home": "Home",
+      "horses": "Our Horses",
+      "facilities": "Facilities",
+      "team": "Our Team",
+      "contact": "Contact"
+    },
+    "riding": {
+      "beginners": "Beginners",
+      "children": "Children",
+      "advanced": "Advanced",
+      "private": "Private Lessons",
+      "camps": "Summer Camps"
+    },
+    "copyright": "© 2026 JK Warszawa. All rights reserved.",
+    "tagline": "Designed with care for every rider"
+  }
+}

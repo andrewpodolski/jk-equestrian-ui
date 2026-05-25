@@ -1,17 +1,32 @@
-import Link from "next/link";
-import messages from "@/i18n/messages/pl.json";
+'use client';
 
-const m = messages.footer;
-const nav = messages.nav;
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { localizePath, getLocaleFromPathname } from '@/i18n/routing';
+import enMessages from '@/i18n/messages/en.json';
+import plMessages from '@/i18n/messages/pl.json';
 
 export function Footer() {
+  const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const messages = locale === 'en' ? enMessages : plMessages;
+  const m = messages.footer;
+  const nav = messages.nav;
+
+  const exploreLinks = [
+    ['/', nav.home],
+    ['/horses', nav.horses],
+    ['/facilities', nav.facilities],
+    ['/team', nav.team],
+    ['/contact', nav.contact],
+  ] as const;
+
   return (
     <footer className="bg-blue-dark px-10 lg:px-16 pt-16 pb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-8 lg:gap-12 mb-12 pb-12 border-b border-gold/15">
-        {/* Brand */}
         <div>
           <Link
-            href="/"
+            href={localizePath('/', locale)}
             className="font-serif text-[1.6rem] font-semibold text-cream no-underline block mb-3"
           >
             JK<span className="text-gold">Warszawa</span>
@@ -21,24 +36,15 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Explore */}
         <div>
           <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-5">
             {m.explore}
           </p>
           <ul className="flex flex-col gap-[0.6rem] list-none">
-            {(
-              [
-                ["/", nav.home],
-                ["/horses", nav.horses],
-                ["/facilities", nav.facilities],
-                ["/team", nav.team],
-                ["/contact", nav.contact],
-              ] as const
-            ).map(([href, label]) => (
-              <li key={href}>
+            {exploreLinks.map(([path, label]) => (
+              <li key={path}>
                 <Link
-                  href={href}
+                  href={localizePath(path, locale)}
                   className="text-[0.85rem] text-cream/45 hover:text-cream no-underline transition-colors duration-200 font-light"
                 >
                   {label}
@@ -48,7 +54,6 @@ export function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-5">
             {m.contact}
@@ -57,7 +62,7 @@ export function Footer() {
             [
               [
                 messages.contact.info.address.label,
-                messages.contact.info.address.value.replace(/\n/g, ", "),
+                messages.contact.info.address.value.replace(/\n/g, ', '),
               ],
               [
                 messages.contact.info.phone.label,
@@ -73,7 +78,7 @@ export function Footer() {
               ],
               [
                 messages.contact.info.hours.label,
-                "Pon–Pt 8:00–20:00 / Sob–Nd 8:00–18:00",
+                `${messages.contact.info.hours.weekdays} ${messages.contact.info.hours.weekdayHours} / ${messages.contact.info.hours.weekend} ${messages.contact.info.hours.weekendHours}`,
               ],
             ] as [string, string][]
           ).map(([label, val]) => (

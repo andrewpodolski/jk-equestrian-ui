@@ -1,19 +1,11 @@
-"use client";
-
 import { FadeUp } from "@/components/ui/FadeUp";
-import messages from "@/i18n/messages/pl.json";
+import type { Locale } from "@/i18n/config";
+import { getNestedMessages } from "@/i18n/server";
 
-const m = messages.contact;
+async function ContactPageContent({ locale }: { locale: Locale }) {
+  const messages = await getNestedMessages(locale);
+  const m = messages.contact;
 
-const subjects = [
-  { value: "lessons", label: m.form.subjects.lessons },
-  { value: "children", label: m.form.subjects.children },
-  { value: "livery", label: m.form.subjects.livery },
-  { value: "visit", label: m.form.subjects.visit },
-  { value: "other", label: m.form.subjects.other },
-];
-
-export default function ContactPage() {
   return (
     <>
       {/* ── Page Hero ── */}
@@ -145,4 +137,12 @@ export default function ContactPage() {
       </section>
     </>
   );
+}
+
+export default function ContactPage() {
+  return ContactPageContent({ locale: 'pl' });
+}
+
+export function EnContactPage() {
+  return ContactPageContent({ locale: 'en' });
 }

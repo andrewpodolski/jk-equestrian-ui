@@ -1,23 +1,23 @@
-import Link from 'next/link';
+import { LocaleLink } from '@/components/ui/LocaleLink';
 import { FadeUp } from '@/components/ui/FadeUp';
-import messages from '@/i18n/messages/pl.json';
+import type { Locale } from '@/i18n/config';
+import { getNestedMessages } from '@/i18n/server';
 
-const m = messages;
+async function HomePageContent({ locale }: { locale: Locale }) {
+  const m = await getNestedMessages(locale);
 
-const horses = [
-  m.horses.apollo, m.horses.luna, m.horses.storm, m.horses.bella,
-  m.horses.maestro, m.horses.daisy, m.horses.thunder, m.horses.cleo,
-];
+  const horses = [
+    m.horses.apollo, m.horses.luna, m.horses.storm, m.horses.bella,
+    m.horses.maestro, m.horses.daisy, m.horses.thunder, m.horses.cleo,
+  ];
 
-const trainers = [
-  m.team.trainers.anna, m.team.trainers.marek, m.team.trainers.zofia,
-];
-
-export default function HomePage() {
+  const trainers = [
+    m.team.trainers.anna, m.team.trainers.marek, m.team.trainers.zofia,
+  ];
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-end pb-24 lg:pb-32 overflow-hidden">
+      <section className="relative min-h-[100svh] overflow-hidden md:min-h-screen md:flex md:items-end md:pb-24 lg:pb-32">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-dark via-blue-mid to-[#0a3d6e]" />
         <div className="absolute inset-0 opacity-20"
@@ -25,19 +25,21 @@ export default function HomePage() {
         />
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-[0.6rem] tracking-[0.25em] uppercase text-cream/40">Przewiń</span>
+          <span className="text-[0.6rem] tracking-[0.25em] uppercase text-cream/40">{m.hero.scrollHint}</span>
           <div className="w-px h-12 bg-gold/40 animate-scroll-pulse origin-top" />
         </div>
 
-        <div className="relative z-10 px-10 lg:px-16 w-full max-w-6xl">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-10 pt-28 pb-24 md:pt-0 md:pb-0 lg:px-16">
           <FadeUp>
             <p className="eyebrow-line flex items-center gap-3 text-[0.65rem] tracking-[0.25em] uppercase text-gold mb-6">
               {m.hero.eyebrow}
             </p>
           </FadeUp>
           <FadeUp threshold={0.05}>
-            <h1 className="font-serif text-[clamp(3rem,8vw,6.5rem)] leading-[1.05] font-semibold text-cream mb-8 max-w-3xl">
-              {m.hero.title.replace('{emphasis}', '')}<em className="text-gold not-italic">{m.hero.titleEmphasis}</em>{' '}spotyka siodło
+            <h1 className="font-serif text-[3rem] leading-[1.05] font-semibold text-cream mb-8 max-w-[11em] md:max-w-3xl md:text-[clamp(3rem,8vw,6.5rem)]">
+              {m.hero.title}
+              <em className="text-gold not-italic">{m.hero.titleEmphasis}</em>
+              {m.hero.titleSuffix}
             </h1>
           </FadeUp>
           <FadeUp threshold={0.05}>
@@ -47,18 +49,18 @@ export default function HomePage() {
           </FadeUp>
           <FadeUp threshold={0.05}>
             <div className="flex flex-wrap gap-4">
-              <Link
+              <LocaleLink
                 href="/horses"
                 className="inline-flex items-center gap-2 text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark bg-gold hover:bg-gold-light px-8 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {m.hero.ctaPrimary}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 href="/facilities"
                 className="inline-flex items-center gap-2 text-[0.78rem] tracking-[0.12em] uppercase font-medium text-cream border border-cream/30 hover:border-cream/60 px-8 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {m.hero.ctaSecondary}
-              </Link>
+              </LocaleLink>
             </div>
           </FadeUp>
         </div>
@@ -94,12 +96,12 @@ export default function HomePage() {
               </h2>
               <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-5 font-light">{m.about.p1}</p>
               <p className="text-[0.95rem] text-text-mid leading-[1.85] mb-10 font-light">{m.about.p2}</p>
-              <Link
+              <LocaleLink
                 href="/team"
                 className="inline-flex items-center gap-3 text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark border-b border-blue-dark/30 pb-1 no-underline hover:border-gold hover:text-gold transition-colors duration-200"
               >
                 {m.about.cta}
-              </Link>
+              </LocaleLink>
             </div>
           </FadeUp>
 
@@ -117,8 +119,6 @@ export default function HomePage() {
           </FadeUp>
         </div>
       </section>
-
-      {/* ── Herd ── */}
       <section className="bg-cream-dark py-28 lg:py-36">
         <div className="max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>
@@ -131,17 +131,16 @@ export default function HomePage() {
                   {m.herd.title}<br /><em className="text-gold not-italic">{m.herd.titleEmphasis}</em>
                 </h2>
               </div>
-              <Link
+              <LocaleLink
                 href="/horses"
                 className="shrink-0 text-[0.75rem] tracking-[0.12em] uppercase font-medium text-blue-dark border-b border-blue-dark/30 pb-1 no-underline hover:border-gold hover:text-gold transition-colors duration-200"
               >
                 {m.herd.cta}
-              </Link>
+              </LocaleLink>
             </div>
           </FadeUp>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {horses.map((horse, i) => (
+            {horses.map((horse) => (
               <FadeUp key={horse.name} threshold={0.05}>
                 <div className="group bg-offwhite rounded-[2px] overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-blue-dark/80 to-blue-mid/60 flex items-center justify-center">
@@ -161,8 +160,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ── Team preview ── */}
       <section className="bg-offwhite py-28 lg:py-36">
         <div className="max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>
@@ -190,21 +187,18 @@ export default function HomePage() {
               </FadeUp>
             ))}
           </div>
-
           <FadeUp>
             <div className="text-center">
-              <Link
+              <LocaleLink
                 href="/team"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark border-b border-blue-dark/30 pb-1 no-underline hover:border-gold hover:text-gold transition-colors duration-200"
               >
-                Poznaj cały zespół
-              </Link>
+                {m.team.cta}
+              </LocaleLink>
             </div>
           </FadeUp>
         </div>
       </section>
-
-      {/* ── Quote ── */}
       <section className="bg-blue-dark py-24 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto px-10 lg:px-16 text-center">
@@ -218,8 +212,6 @@ export default function HomePage() {
           </div>
         </FadeUp>
       </section>
-
-      {/* ── CTA ── */}
       <section className="bg-offwhite py-28 lg:py-36">
         <FadeUp>
           <div className="max-w-3xl mx-auto px-10 lg:px-16 text-center">
@@ -230,12 +222,12 @@ export default function HomePage() {
               {m.cta.home.body}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
+              <LocaleLink
                 href="/contact"
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark bg-gold hover:bg-gold-light px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {m.cta.home.primary}
-              </Link>
+              </LocaleLink>
               <a
                 href={`tel:${m.cta.home.secondary.replace(/\s/g, '')}`}
                 className="inline-flex text-[0.78rem] tracking-[0.12em] uppercase font-medium text-text-dark border border-text-dark/20 hover:border-gold hover:text-gold px-10 py-4 rounded-[2px] transition-colors duration-200 no-underline"
@@ -248,4 +240,12 @@ export default function HomePage() {
       </section>
     </>
   );
+}
+
+export default function HomePage() {
+  return HomePageContent({ locale: 'pl' });
+}
+
+export function EnHomePage() {
+  return HomePageContent({ locale: 'en' });
 }

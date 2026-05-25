@@ -4,14 +4,25 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useIntl } from "react-intl";
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { localizePath, stripLocaleFromPathname } from "@/i18n/routing";
+
+const navPaths = [
+  { path: "/", id: "nav.home" },
+  { path: "/horses", id: "nav.horses" },
+  { path: "/facilities", id: "nav.facilities" },
+  { path: "/team", id: "nav.team" },
+  { path: "/contact", id: "nav.contact" },
+] as const;
 
 export function Nav() {
   const pathname = usePathname();
-  const { formatMessage } = useIntl();
+  const { formatMessage, locale } = useIntl();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isHome = pathname === "/";
+  const basePath = stripLocaleFromPathname(pathname);
+  const isHome = basePath === "/";
 
   // Close hamburger on route change (defer setState — sync setState in effects is disallowed by eslint)
   useEffect(() => {
@@ -26,13 +37,11 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  const links = [
-    { href: "/", label: formatMessage({ id: "nav.home" }) },
-    { href: "/horses", label: formatMessage({ id: "nav.horses" }) },
-    { href: "/facilities", label: formatMessage({ id: "nav.facilities" }) },
-    { href: "/team", label: formatMessage({ id: "nav.team" }) },
-    { href: "/contact", label: formatMessage({ id: "nav.contact" }) },
-  ];
+  const links = navPaths.map(({ path, id }) => ({
+    href: localizePath(path, locale),
+    path,
+    label: formatMessage({ id }),
+  }));
 
   const solid = !isHome || scrolled;
 
@@ -47,32 +56,35 @@ export function Nav() {
     >
       {/* Logo */}
       <Link
-        href="/"
+        href={localizePath("/", locale)}
         className="font-serif text-2xl font-semibold text-cream tracking-[0.06em] no-underline shrink-0"
       >
         JK<span className="text-gold">Warszawa</span>
       </Link>
 
-      {/* Desktop links */}
-      <ul className="hidden md:flex gap-8 lg:gap-10 list-none">
-        {links.map(({ href, label }) => (
-          <li key={href}>
-            <Link
-              href={href}
-              className={[
-                "text-[0.78rem] tracking-[0.14em] uppercase no-underline transition-colors duration-200",
-                pathname === href
-                  ? "text-gold-light"
-                  : "text-cream/80 hover:text-gold-light",
-              ].join(" ")}
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {/* Desktop nav + language switcher */}
+      <div className="hidden md:flex items-center gap-8 lg:gap-10">
+        <ul className="flex gap-8 lg:gap-10 list-none">
+          {links.map(({ href, path, label }) => (
+            <li key={path}>
+              <Link
+                href={href}
+                className={[
+                  "text-[0.78rem] tracking-[0.14em] uppercase no-underline transition-colors duration-200",
+                  basePath === path
+                    ? "text-gold-light"
+                    : "text-cream/80 hover:text-gold-light",
+                ].join(" ")}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <LanguageSwitcher />
+      </div>
 
-      {/* Hamburger (mobile) */}
+      {/* Mobile hamburger */}
       <button
         className="flex md:hidden flex-col justify-center gap-[5px] w-9 h-9 p-1 bg-transparent border-none cursor-pointer"
         aria-label={menuOpen ? "Zamknij menu" : "Otwórz menu"}
@@ -102,13 +114,13 @@ export function Nav() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 flex flex-col bg-blue-dark/[0.98] backdrop-blur-sm border-t border-gold/20 shadow-[0_8px_24px_rgba(0,0,0,0.25)] px-6 py-8 gap-6 md:hidden">
-          {links.map(({ href, label }) => (
+          {links.map(({ href, path, label }) => (
             <Link
-              key={href}
+              key={path}
               href={href}
               className={[
                 "text-[0.88rem] tracking-[0.14em] uppercase no-underline transition-colors duration-200",
-                pathname === href
+                basePath === path
                   ? "text-gold-light"
                   : "text-cream/85 hover:text-gold-light",
               ].join(" ")}
@@ -117,6 +129,9 @@ export function Nav() {
               {label}
             </Link>
           ))}
+          <div className="w-fit pt-4 border-t border-gold/15">
+            <LanguageSwitcher />
+          </div>
         </div>
       )}
     </nav>
