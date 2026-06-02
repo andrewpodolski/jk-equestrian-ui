@@ -119,47 +119,17 @@
     "subtitle": "Each instructor brings unique experience — from competing internationally to therapeutic riding — united by a shared passion for horses and dedication to every rider’s development.",
     "cta": "Meet the full team",
     "trainers": {
-      "anna": {
-        "name": "Anna Kowalska",
+      "robert": {
+        "name": "Robert Kowalczyk",
         "title": "School Director & Head Instructor",
-        "bio": "25 years in competitive dressage. Anna founded RK Warszawa with the belief that every rider deserves patient, progressive training built on trust — not force.",
+        "bio": "With 25 years of experience in competitive dressage, Robert founded RK Warszawa on the belief that every rider deserves patient, progressive training built on trust—not force.",
         "tags": ["Dressage", "Advanced Riders"]
       },
-      "marek": {
-        "name": "Marek Nowak",
-        "title": "Jumping Instructor",
-        "bio": "Former member of the Polish national show jumping team. Specializes in building rider confidence — from first poles on the ground to courses up to 1.20 m.",
-        "tags": ["Jumping", "Cross-country"]
-      },
-      "zofia": {
-        "name": "Zofia Wiśniewska",
-        "title": "Children’s Program Manager",
-        "bio": "Certified in equine-assisted learning, Zofia leads the Young Riders program and summer camps with endless energy and a natural talent for working with children.",
-        "tags": ["Children", "Camps", "Beginners"]
-      },
-      "piotr": {
-        "name": "Piotr Zając",
-        "title": "Flatwork & Young Horse Instructor",
-        "bio": "Piotr has worked with young horses for over a decade, developing suppleness and lightness. He brings a classical approach to flatwork that benefits riders at every level.",
-        "tags": ["Flatwork", "Young Horses", "Intermediate"]
-      },
-      "marta": {
-        "name": "Marta Lewandowska",
-        "title": "Adult Beginner Specialist",
-        "bio": "Marta has a unique gift for teaching adults starting from zero or feeling nervous. Her calm, methodical approach helps riders quickly build confidence and strong technical foundations.",
-        "tags": ["Adults", "Beginners", "Nervous Riders"]
-      },
-      "tomasz": {
-        "name": "Tomasz Bąk",
-        "title": "Senior Riding Instructor",
-        "bio": "18 years of teaching experience in Poland and Germany. Tomasz uses a methodical, rider-focused approach — mainly working with intermediate and advanced adult riders.",
-        "tags": ["Intermediate", "Advanced", "Adults"]
-      },
-      "karolina": {
-        "name": "Karolina Wróbel",
-        "title": "Therapeutic Riding Instructor",
-        "bio": "Certified in hippotherapy and therapeutic riding, Karolina leads our adaptive riding program, combining professional expertise with genuine care for every participant.",
-        "tags": ["Therapeutic", "Hippotherapy", "Adaptive Riding"]
+      "matylda": {
+        "name": "Matylda Weigel",
+        "title": "Show Jumping Instructor",
+        "bio": "A former member of the Polish national show jumping team, Matylda helps riders build confidence and develop their skills—from their first pole exercises to navigating 1.20 m courses.",
+        "tags": ["Show Jumping", "Obstacles"]
       }
     },
     "stableTeam": {
@@ -174,14 +144,6 @@
       "agnieszka": {
         "name": "Agnieszka Duda",
         "role": "Senior Groom"
-      },
-      "lukasz": {
-        "name": "Łukasz Kowal",
-        "role": "Stable Manager"
-      },
-      "natalia": {
-        "name": "Natalia Pawlak",
-        "role": "Horse Welfare Officer"
       }
     },
     "values": {

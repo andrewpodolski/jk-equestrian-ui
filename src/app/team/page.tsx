@@ -8,7 +8,7 @@ async function TeamPageContent({ locale }: { locale: Locale }) {
   const m = messages.team;
   const cta = messages.cta.team;
 
-  const trainers = [m.trainers.anna, m.trainers.karolina];
+  const trainers = [m.trainers.robert, m.trainers.matylda];
 
   const stableTeam = [m.stableTeam.krzysztof, m.stableTeam.agnieszka];
 

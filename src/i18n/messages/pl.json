@@ -119,47 +119,17 @@
     "subtitle": "Każdy instruktor wnosi unikalne doświadczenie — od startów na arenie międzynarodowej po jazdę terapeutyczną — łączy ich wspólna pasja do koni i zaangażowanie w rozwój każdego jeźdźca.",
     "cta": "Poznaj cały zespół",
     "trainers": {
-      "anna": {
-        "name": "Anna Kowalska",
+      "robert": {
+        "name": "Robert Kowalczyk",
         "title": "Dyrektor szkoły i główny instruktor",
-        "bio": "25 lat w sportowym ujeżdżeniu. RObert założyła RK Warszawa z przekonaniem, że każdy jeździec zasługuje na cierpliwe, progresywne szkolenie oparte na zaufaniu — nie na przymusie.",
+        "bio": "25 lat w sportowym ujeżdżeniu. Robert założył RK Warszawa z przekonaniem, że każdy jeździec zasługuje na cierpliwe, progresywne szkolenie oparte na zaufaniu — nie na przymusie.",
         "tags": ["Ujeżdżenie", "Zaawansowani"]
       },
-      "marek": {
-        "name": "Marek Nowak",
+      "matylda": {
+        "name": "Matylda Weigel",
         "title": "Instruktor skoków",
-        "bio": "Były członek reprezentacji Polski w skokach przez przeszkody. Specjalizuje się w budowaniu pewności jeźdźca — od pierwszych patyków na ziemi po kursy do 1,20 m.",
-        "tags": ["Skoki", "Cross-country"]
-      },
-      "zofia": {
-        "name": "Zofia Wiśniewska",
-        "title": "Kierownik programu dla dzieci",
-        "bio": "Certyfikowana w zakresie uczenia wspomaganego przez konia, Zofia prowadzi program Młodych Jeźdźców i obozy letnie z nieskończoną energią i talentem do pracy z najmłodszymi.",
-        "tags": ["Dzieci", "Obozy", "Początkujący"]
-      },
-      "piotr": {
-        "name": "Piotr Zając",
-        "title": "Instruktor pracy płaskiej i młodych koni",
-        "bio": "Piotr od dekady pracuje z młodymi końmi, rozwijając ich przepuszczalność i lekkość. Wnosi klasyczne podejście do pracy płaskiej, które przynosi korzyści jeźdźcom na każdym poziomie.",
-        "tags": ["Praca płaska", "Młode konie", "Średniozaawansowani"]
-      },
-      "marta": {
-        "name": "Marta Lewandowska",
-        "title": "Specjalistka dla dorosłych początkujących",
-        "bio": "Marta ma wyjątkowy dar uczenia dorosłych, którzy zaczynają od zera lub są zdenerwowani. Jej spokojne, metodyczne podejście pomaga szybko zbudować pewność i solidne podstawy techniczne.",
-        "tags": ["Dorośli", "Początkujący", "Zdenerwowani jeźdźcy"]
-      },
-      "tomasz": {
-        "name": "Tomasz Bąk",
-        "title": "Starszy instruktor jazdy konnej",
-        "bio": "18 lat doświadczenia dydaktycznego w Polsce i Niemczech. Tomasz stosuje metodyczne, skoncentrowane na jeźdźcu podejście — pracuje głównie z dorosłymi na poziomie średniozaawansowanym i zaawansowanym.",
-        "tags": ["Średniozaawansowani", "Zaawansowani", "Dorośli"]
-      },
-      "karolina": {
-        "name": "Karolina Wróbel",
-        "title": "Instruktor jazdy terapeutycznej",
-        "bio": "Certyfikowana w hipoterapii i jeździe terapeutycznej, Karolina prowadzi nasz program jeździectwa adaptacyjnego łącząc profesjonalną wiedzę z autentyczną troską o każdego uczestnika.",
-        "tags": ["Terapeutyczna", "Hipoterapia", "Adaptacyjna"]
+        "bio": "Była członkini reprezentacji Polski w skokach przez przeszkody. Pomaga jeźdźcom budować pewność siebie i rozwijać umiejętności — od pierwszych ćwiczeń na drągach po parkury na poziomie 1,20 m.",
+        "tags": ["Skoki", "Przeszkody"]
       }
     },
     "stableTeam": {
@@ -168,9 +138,7 @@
       "titleEmphasis": "stajenna",
       "intro": "Nasze konie są tak szczęśliwe, jak szczęśliwi są ludzie, którzy każdego dnia się nimi opiekują. Ekipa stajenna to kręgosłup RK Warszawa — oddana, doświadczona i głęboko zaangażowana w dobrostan koni.",
       "krzysztof": { "name": "Krzysztof Malik", "role": "Główny stajenny" },
-      "agnieszka": { "name": "Agnieszka Duda", "role": "Starszy stajenny" },
-      "lukasz": { "name": "Łukasz Kowal", "role": "Kierownik stajni" },
-      "natalia": { "name": "Natalia Pawlak", "role": "Oficer dobrostanu koni" }
+      "agnieszka": { "name": "Agnieszka Duda", "role": "Starszy stajenny" }
     },
     "values": {
       "eyebrow": "Co nami kieruje",
