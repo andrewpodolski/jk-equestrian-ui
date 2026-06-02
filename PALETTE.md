@@ -1,4 +1,4 @@
-# JK Warszawa — Color Palette
+# RK Warszawa — Color Palette
 
 Design token reference for the JK Equestrian UI. Primitives live in [`src/app/globals.css`](src/app/globals.css) as Tailwind v4 `@theme` variables.
 

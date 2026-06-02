@@ -14,10 +14,9 @@ export function Footer() {
   const m = messages.footer;
   const nav = messages.nav;
 
-  const exploreLinks = siteNavItems.map(({ path, labelKey }) => [
-    path,
-    nav[labelKey],
-  ] as const);
+  const exploreLinks = siteNavItems.map(
+    ({ path, labelKey }) => [path, nav[labelKey]] as const,
+  );
 
   return (
     <footer className="bg-blue-dark px-10 lg:px-16 pt-16 pb-8">
@@ -27,7 +26,7 @@ export function Footer() {
             href={localizePath("/", locale)}
             className="font-serif text-[1.6rem] font-semibold text-cream no-underline block mb-3"
           >
-            JK<span className="text-gold">Warszawa</span>
+            RK<span className="text-gold">Warszawa</span>
           </Link>
           <p className="text-[0.85rem] text-cream/40 leading-[1.75] font-light">
             {m.desc}

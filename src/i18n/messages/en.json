@@ -13,7 +13,7 @@
     "title": "Where ",
     "titleEmphasis": "passion",
     "titleSuffix": " meets the saddle",
-    "subtitle": "In the heart of the Masovian countryside, just south of Warsaw, JK Warszawa has been home to riders of all ages and skill levels for over 25 years. From a child’s first lesson to refining the skills of experienced competitors — this is where a true equestrian journey begins.",
+    "subtitle": "In the heart of the Masovian countryside, just south of Warsaw, RK Warszawa has been home to riders of all ages and skill levels for over 25 years. From a child’s first lesson to refining the skills of experienced competitors — this is where a true equestrian journey begins.",
     "ctaPrimary": "Meet Our Horses",
     "ctaSecondary": "Explore the Facilities",
     "scrollHint": "Scroll"
@@ -32,8 +32,8 @@
     "eyebrow": "Our Story",
     "title": "More than",
     "titleEmphasis": "a riding school",
-    "p1": "JK Warszawa was founded in Warsaw in 1998 as a small family stable — three horses, one arena, and a deep belief that horseback riding changes people. Today, we are one of the most respected equestrian centers in the Warsaw region.",
-    "p2": "Home to over 40 horses, eight dedicated instructors, and a community of riders who return season after season — some now bringing their own children — JK Warszawa is a place built on patience, progress, and a genuine love for horses.",
+    "p1": "RK Warszawa was founded in Warsaw in 1998 as a small family stable — three horses, one arena, and a deep belief that horseback riding changes people. Today, we are one of the most respected equestrian centers in the Warsaw region.",
+    "p2": "Home to over 40 horses, eight dedicated instructors, and a community of riders who return season after season — some now bringing their own children — RK Warszawa is a place built on patience, progress, and a genuine love for horses.",
     "cta": "Meet Our Team",
     "badge": "Years of Excellence",
     "badgeValue": "25+"
@@ -122,7 +122,7 @@
       "anna": {
         "name": "Anna Kowalska",
         "title": "School Director & Head Instructor",
-        "bio": "25 years in competitive dressage. Anna founded JK Warszawa with the belief that every rider deserves patient, progressive training built on trust — not force.",
+        "bio": "25 years in competitive dressage. Anna founded RK Warszawa with the belief that every rider deserves patient, progressive training built on trust — not force.",
         "tags": ["Dressage", "Advanced Riders"]
       },
       "marek": {
@@ -166,7 +166,7 @@
       "eyebrow": "Behind the Scenes",
       "title": "The Stable",
       "titleEmphasis": "Crew",
-      "intro": "Our horses are only as happy as the people who care for them every day. The stable crew is the backbone of JK Warszawa — dedicated, experienced, and deeply committed to horse welfare.",
+      "intro": "Our horses are only as happy as the people who care for them every day. The stable crew is the backbone of RK Warszawa — dedicated, experienced, and deeply committed to horse welfare.",
       "krzysztof": {
         "name": "Krzysztof Malik",
         "role": "Head Groom"
@@ -201,7 +201,7 @@
       "openToAll": {
         "num": "03",
         "name": "Open to Everyone",
-        "desc": "Whether you are five or fifty-five, nervous or ambitious — there is a place for you at JK Warszawa. Horse riding is for everyone."
+        "desc": "Whether you are five or fifty-five, nervous or ambitious — there is a place for you at RK Warszawa. Horse riding is for everyone."
       }
     }
   },
@@ -259,11 +259,11 @@
     "eyebrow": "Our Base",
     "title": "World-Class",
     "titleEmphasis": "Facilities",
-    "pageDesc": "Every corner of JK Warszawa has been designed with both horse and rider in mind — providing the best possible environment for learning, competing, and simply being around horses.",
+    "pageDesc": "Every corner of RK Warszawa has been designed with both horse and rider in mind — providing the best possible environment for learning, competing, and simply being around horses.",
     "indoor": {
       "tag": "Arena · 01",
       "name": "Indoor Riding Arena",
-      "desc": "Our flagship 60 × 20 m indoor arena is the heart of JK Warszawa. Fully lit and climate-controlled, it allows year-round riding regardless of the weather — essential in our region.",
+      "desc": "Our flagship 60 × 20 m indoor arena is the heart of RK Warszawa. Fully lit and climate-controlled, it allows year-round riding regardless of the weather — essential in our region.",
       "specs": [
         "60 × 20 m dimensions — competition standard",
         "Professional sand-and-rubber footing",
@@ -287,7 +287,7 @@
     "stables": {
       "tag": "Stable",
       "name": "Modern Stable Block",
-      "desc": "50 spacious stalls built to the highest animal welfare standards. Every horse at JK Warszawa lives in comfort — with natural light, ventilation, and attentive daily care.",
+      "desc": "50 spacious stalls built to the highest animal welfare standards. Every horse at RK Warszawa lives in comfort — with natural light, ventilation, and attentive daily care.",
       "specs": [
         "50 individual freestanding stalls",
         "Automatic waterers in every stall",
@@ -339,7 +339,7 @@
   },
   "quote": {
     "text": "A horse is a mirror to your soul — and sometimes you may not like what you see, but the horse never lies.",
-    "author": "— Marta L., JK Warszawa rider since 2017"
+    "author": "— Marta L., RK Warszawa rider since 2017"
   },
   "cta": {
     "home": {
@@ -410,7 +410,7 @@
     },
     "info": {
       "eyebrow": "Find Us",
-      "title": "JK Warszawa",
+      "title": "RK Warszawa",
       "address": {
         "label": "Address",
         "value": "Kinetyczna, 02-198 Warsaw"
@@ -456,7 +456,7 @@
       "private": "Private Lessons",
       "camps": "Summer Camps"
     },
-    "copyright": "© 2026 JK Warszawa. All rights reserved.",
+    "copyright": "© 2026 RK Warszawa. All rights reserved.",
     "tagline": "Designed with care for every rider"
   }
 }

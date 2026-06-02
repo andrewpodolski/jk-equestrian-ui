@@ -52,7 +52,7 @@ export function Nav() {
         href={localizePath("/", locale)}
         className="font-serif text-2xl font-semibold text-cream tracking-[0.06em] no-underline shrink-0"
       >
-        JK<span className="text-gold">Warszawa</span>
+        RK<span className="text-gold">Warszawa</span>
       </Link>
 
       {/* Desktop nav + language switcher */}

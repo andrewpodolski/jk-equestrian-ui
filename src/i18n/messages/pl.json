@@ -13,7 +13,7 @@
     "title": "Gdzie ",
     "titleEmphasis": "pasje",
     "titleSuffix": " spotyka siodło",
-    "subtitle": "W sercu mazowieckiej wsi, tuż na południe od Warszawy, JK Warszawa od ponad 25 lat jest domem dla jeźdźców w każdym wieku i na każdym poziomie zaawansowania. Od pierwszej lekcji dziecka po szlifowanie warsztatu doświadczonego zawodnika — tu zaczyna się prawdziwa jeździecka przygoda.",
+    "subtitle": "W sercu mazowieckiej wsi, tuż na południe od Warszawy, RK Warszawa od ponad 25 lat jest domem dla jeźdźców w każdym wieku i na każdym poziomie zaawansowania. Od pierwszej lekcji dziecka po szlifowanie warsztatu doświadczonego zawodnika — tu zaczyna się prawdziwa jeździecka przygoda.",
     "ctaPrimary": "Poznaj nasze konie",
     "ctaSecondary": "Zwiedzaj infrastrukturę",
     "scrollHint": "Przewiń"
@@ -32,8 +32,8 @@
     "eyebrow": "Nasza historia",
     "title": "Coś więcej niż",
     "titleEmphasis": "szkoła jazdy",
-    "p1": "JK Warszawa powstało w Warszawe w 1998 roku jako mała rodzinna stajnia — trzy konie, jedna ujeżdżalnia i głębokie przekonanie, że jazda konna zmienia ludzi. Dziś jesteśmy jednym z najbardziej cenionych ośrodków jeździeckich w regionie warszawskim.",
-    "p2": "Dom dla ponad 40 koni, ośmiu oddanych instruktorów i społeczności jeźdźców, którzy wracają do nas sezon po sezonie — niektórzy z nich przyprowadzają już własne dzieci — JK Warszawa to miejsce zbudowane na cierpliwości, postępie i autentycznej miłości do konia.",
+    "p1": "RK Warszawa powstało w Warszawe w 1998 roku jako mała rodzinna stajnia — trzy konie, jedna ujeżdżalnia i głębokie przekonanie, że jazda konna zmienia ludzi. Dziś jesteśmy jednym z najbardziej cenionych ośrodków jeździeckich w regionie warszawskim.",
+    "p2": "Dom dla ponad 40 koni, ośmiu oddanych instruktorów i społeczności jeźdźców, którzy wracają do nas sezon po sezonie — niektórzy z nich przyprowadzają już własne dzieci — RK Warszawa to miejsce zbudowane na cierpliwości, postępie i autentycznej miłości do konia.",
     "cta": "Poznaj nasz zespół",
     "badge": "Lat doskonałości",
     "badgeValue": "25+"
@@ -122,7 +122,7 @@
       "anna": {
         "name": "Anna Kowalska",
         "title": "Dyrektor szkoły i główny instruktor",
-        "bio": "25 lat w sportowym ujeżdżeniu. Anna założyła JK Warszawa z przekonaniem, że każdy jeździec zasługuje na cierpliwe, progresywne szkolenie oparte na zaufaniu — nie na przymusie.",
+        "bio": "25 lat w sportowym ujeżdżeniu. RObert założyła RK Warszawa z przekonaniem, że każdy jeździec zasługuje na cierpliwe, progresywne szkolenie oparte na zaufaniu — nie na przymusie.",
         "tags": ["Ujeżdżenie", "Zaawansowani"]
       },
       "marek": {
@@ -166,7 +166,7 @@
       "eyebrow": "Za kulisami",
       "title": "Ekipa",
       "titleEmphasis": "stajenna",
-      "intro": "Nasze konie są tak szczęśliwe, jak szczęśliwi są ludzie, którzy każdego dnia się nimi opiekują. Ekipa stajenna to kręgosłup JK Warszawa — oddana, doświadczona i głęboko zaangażowana w dobrostan koni.",
+      "intro": "Nasze konie są tak szczęśliwe, jak szczęśliwi są ludzie, którzy każdego dnia się nimi opiekują. Ekipa stajenna to kręgosłup RK Warszawa — oddana, doświadczona i głęboko zaangażowana w dobrostan koni.",
       "krzysztof": { "name": "Krzysztof Malik", "role": "Główny stajenny" },
       "agnieszka": { "name": "Agnieszka Duda", "role": "Starszy stajenny" },
       "lukasz": { "name": "Łukasz Kowal", "role": "Kierownik stajni" },
@@ -189,7 +189,7 @@
       "openToAll": {
         "num": "03",
         "name": "Otwartość dla każdego",
-        "desc": "Niezależnie od tego, czy masz pięć czy pięćdziesiąt pięć lat, czy jesteś zalękniony czy ambicjonalny — w JK Warszawa jest miejsce dla Ciebie. Jazda konna jest dla wszystkich."
+        "desc": "Niezależnie od tego, czy masz pięć czy pięćdziesiąt pięć lat, czy jesteś zalękniony czy ambicjonalny — w RK Warszawa jest miejsce dla Ciebie. Jazda konna jest dla wszystkich."
       }
     }
   },
@@ -247,11 +247,11 @@
     "eyebrow": "Nasza baza",
     "title": "Infrastruktura",
     "titleEmphasis": "światowej klasy",
-    "pageDesc": "Każdy zakątek JK Warszawa został zaprojektowany z myślą o koniu i jeźdźcu — zapewniając najlepsze możliwe warunki do nauki, zawodów i po prostu przebywania wśród koni.",
+    "pageDesc": "Każdy zakątek RK Warszawa został zaprojektowany z myślą o koniu i jeźdźcu — zapewniając najlepsze możliwe warunki do nauki, zawodów i po prostu przebywania wśród koni.",
     "indoor": {
       "tag": "Ujeżdżalnia · 01",
       "name": "Kryta ujeżdżalnia",
-      "desc": "Nasza flagowa kryta ujeżdżalnia o wymiarach 60 × 20 m to serce JK Warszawa. W pełni oświetlona i klimatyzowana, umożliwia jazdę przez cały rok — niezależnie od pogody, co w naszym regionie ma kluczowe znaczenie.",
+      "desc": "Nasza flagowa kryta ujeżdżalnia o wymiarach 60 × 20 m to serce RK Warszawa. W pełni oświetlona i klimatyzowana, umożliwia jazdę przez cały rok — niezależnie od pogody, co w naszym regionie ma kluczowe znaczenie.",
       "specs": [
         "Wymiary 60 × 20 m — standard zawodów",
         "Profesjonalna nawierzchnia piasku i gumy",
@@ -275,7 +275,7 @@
     "stables": {
       "tag": "Stajnia",
       "name": "Nowoczesny blok stajenny",
-      "desc": "50 przestronnych boksów spełniających najwyższe standardy dobrostanu zwierząt. Każdy koń w JK Warszawa żyje w komforcie — z naturalnym światłem, wentylacją i troskliwą codzienną opieką.",
+      "desc": "50 przestronnych boksów spełniających najwyższe standardy dobrostanu zwierząt. Każdy koń w RK Warszawa żyje w komforcie — z naturalnym światłem, wentylacją i troskliwą codzienną opieką.",
       "specs": [
         "50 indywidualnych boksów wolnostojących",
         "Automatyczne pojniki w każdym boksie",
@@ -326,8 +326,8 @@
     }
   },
   "quote": {
-    "text": "Koń jest lustrem twojej duszy — i czasem możesz nie lubić tego, co w nim widzisz, ale koń nie kłamie.",
-    "author": "— Marta L., jeździec JK Warszawa od 2017 roku"
+    "text": "Na parkurze nie wygrywa przypadek, tylko godziny pracy, dyscyplina i partnerstwo z koniem.",
+    "author": "— Robert Kowalczyk, instruktor RK Warszawa"
   },
   "cta": {
     "home": {
@@ -398,7 +398,7 @@
     },
     "info": {
       "eyebrow": "Znajdź nas",
-      "title": "JK Warszawa",
+      "title": "RK Warszawa",
       "address": {
         "label": "Adres",
         "value": "Kinetyczna, 02-198 Warszawa"
@@ -444,7 +444,7 @@
       "private": "Lekcje indywidualne",
       "camps": "Obozy letnie"
     },
-    "copyright": "© 2026 JK Warszawa. Wszelkie prawa zastrzeżone.",
+    "copyright": "© 2026 RK Warszawa. Wszelkie prawa zastrzeżone.",
     "tagline": "Zaprojektowane z troską o każdego jeźdźca"
   }
 }
