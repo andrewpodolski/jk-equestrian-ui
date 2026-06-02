@@ -2,6 +2,7 @@
   "nav": {
     "home": "Strona główna",
     "horses": "Nasze konie",
+    "oferta": "Oferta",
     "facilities": "Infrastruktura",
     "team": "Zespół",
     "contact": "Kontakt",
@@ -192,6 +193,56 @@
       }
     }
   },
+  "oferta": {
+    "eyebrow": "Zajęcia jeździeckie",
+    "title": "Oferta",
+    "titleEmphasis": "",
+    "pageDesc": "Programy dopasowane do każdego poziomu — od pierwszego spotkania z koniem po trening sportowy pod okiem certyfikowanych instruktorów PZJ.",
+    "durationLabel": "Czas trwania",
+    "priceLabel": "Cena",
+    "itemsHeading": "W ramach zajęć:",
+    "firstSteps": {
+      "tag": "Zajęcia · 01",
+      "name": "Pierwsze kroki jeździeckie",
+      "desc": "Zajęcia stworzone dla osób, które chcą rozpocząć swoją przygodę z jeździectwem od podstaw. To idealny pierwszy kontakt z koniem — w bezpiecznych warunkach i pod okiem instruktora. Uczymy, jak prawidłowo obchodzić się z koniem, budować z nim relację oraz jak wygląda podstawowa praca w stajni i pierwsze doświadczenia w siodle.",
+      "duration": "40 min",
+      "price": "100 PLN",
+      "items": [
+        "nauka bezpiecznego podejścia do konia",
+        "zapoznanie się z zachowaniem i podstawami komunikacji z koniem",
+        "nauka czyszczenia i przygotowania konia do jazdy",
+        "nauka siodłania i przygotowania sprzętu",
+        "pierwsze ćwiczenia w siodle pod okiem instruktora"
+      ]
+    },
+    "pzjInstructor": {
+      "tag": "Zajęcia · 02",
+      "name": "Jazda konna z instruktorem PZJ",
+      "desc": "Zajęcia przeznaczone dla osób, które mają już podstawowe doświadczenie i chcą rozwijać swoje umiejętności jeździeckie pod okiem certyfikowanego instruktora PZJ. Trening pozwala na samodzielną pracę z koniem, doskonalenie techniki jazdy oraz świadome budowanie relacji z koniem. Instruktor obserwuje postępy i daje indywidualne wskazówki oraz rekomendacje na przyszły rozwój.",
+      "duration": "60 min",
+      "price": "150 PLN",
+      "items": [
+        "samodzielne prowadzenie konia",
+        "praca w siodle pod nadzorem instruktora",
+        "analiza umiejętności jeźdźca",
+        "indywidualne wskazówki treningowe",
+        "rekomendacje dalszego rozwoju"
+      ]
+    },
+    "sport": {
+      "tag": "Zajęcia · 03",
+      "name": "Zajęcia sportowe",
+      "desc": "Treningi sportowe przeznaczone dla osób zaawansowanych oraz zawodników przygotowujących się do startów w zawodach. Skupiamy się na rozwoju techniki jeździeckiej, poprawie dosiadu, precyzji oraz przygotowaniu pary koń–jeździec do pracy sportowej i startów konkursowych.",
+      "note": "Szczegóły ustalane indywidualnie z trenerem.",
+      "items": [
+        "trening dostosowany do poziomu jeźdźca i konia",
+        "praca nad techniką i dosiadem",
+        "elementy ujeżdżeniowe i skokowe",
+        "przygotowanie do startów w zawodach",
+        "analiza postępów i korekta błędów"
+      ]
+    }
+  },
   "facilities": {
     "eyebrow": "Nasza baza",
     "title": "Infrastruktura",
@@ -299,6 +350,13 @@
       "body": "Zapraszamy na zwiedzanie — skontaktuj się z nami, aby umówić wizytę w stajni i poznać niektóre z naszych koni.",
       "primary": "Umów wizytę",
       "secondary": "Poznaj nasze konie"
+    },
+    "oferta": {
+      "title": "Zainteresowany",
+      "titleEmphasis": "zajęciami?",
+      "body": "Skontaktuj się z nami — pomożemy dobrać odpowiedni program do Twojego poziomu i celów jeździeckich.",
+      "primary": "Napisz do nas",
+      "secondary": "Poznaj zespół"
     },
     "team": {
       "title": "Chcesz trenować z",

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "horses": "Our Horses",
+    "oferta": "Offer",
     "facilities": "Facilities",
     "team": "Team",
     "contact": "Contact",
@@ -204,6 +205,56 @@
       }
     }
   },
+  "oferta": {
+    "eyebrow": "Riding Lessons",
+    "title": "Our",
+    "titleEmphasis": "Offer",
+    "pageDesc": "Programs tailored to every level — from your first meeting with a horse to sport training under certified PZJ instructors.",
+    "durationLabel": "Duration",
+    "priceLabel": "Price",
+    "itemsHeading": "During the lesson:",
+    "firstSteps": {
+      "tag": "Lessons · 01",
+      "name": "First Steps in Riding",
+      "desc": "Lessons designed for those who want to begin their equestrian journey from the ground up. An ideal first contact with a horse — in safe conditions and under instructor supervision. We teach how to approach a horse safely, build a relationship with them, and what basic stable work and first experiences in the saddle look like.",
+      "duration": "40 min",
+      "price": "100 PLN",
+      "items": [
+        "learning a safe approach to the horse",
+        "understanding horse behaviour and basic communication",
+        "learning to groom and prepare the horse for riding",
+        "learning to tack up and prepare equipment",
+        "first exercises in the saddle under instructor supervision"
+      ]
+    },
+    "pzjInstructor": {
+      "tag": "Lessons · 02",
+      "name": "Riding with a PZJ Instructor",
+      "desc": "Lessons for riders with basic experience who want to develop their skills under a certified PZJ instructor. Training allows independent work with the horse, refining riding technique, and consciously building the horse–rider relationship. The instructor observes progress and provides individual guidance and recommendations for future development.",
+      "duration": "60 min",
+      "price": "150 PLN",
+      "items": [
+        "independent leading of the horse",
+        "work in the saddle under instructor supervision",
+        "analysis of the rider's skills",
+        "individual training guidance",
+        "recommendations for further development"
+      ]
+    },
+    "sport": {
+      "tag": "Lessons · 03",
+      "name": "Sport Training",
+      "desc": "Sport training for advanced riders and competitors preparing for shows. We focus on developing riding technique, improving seat and precision, and preparing the horse–rider pair for sport work and competition.",
+      "note": "Details arranged individually with the trainer.",
+      "items": [
+        "training tailored to the rider's and horse's level",
+        "work on technique and seat",
+        "dressage and jumping elements",
+        "preparation for competition",
+        "progress analysis and error correction"
+      ]
+    }
+  },
   "facilities": {
     "eyebrow": "Our Base",
     "title": "World-Class",
@@ -311,6 +362,13 @@
       "body": "We’d love to show you around — contact us to schedule a stable visit and meet some of our horses.",
       "primary": "Book a Visit",
       "secondary": "Meet Our Horses"
+    },
+    "oferta": {
+      "title": "Interested in",
+      "titleEmphasis": "our lessons?",
+      "body": "Get in touch — we’ll help you choose the right program for your level and riding goals.",
+      "primary": "Contact Us",
+      "secondary": "Meet Our Team"
     },
     "team": {
       "title": "Want to train with",

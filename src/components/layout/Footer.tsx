@@ -1,32 +1,30 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { localizePath, getLocaleFromPathname } from '@/i18n/routing';
-import enMessages from '@/i18n/messages/en.json';
-import plMessages from '@/i18n/messages/pl.json';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { localizePath, getLocaleFromPathname } from "@/i18n/routing";
+import { siteNavItems } from "@/config/siteNav";
+import enMessages from "@/i18n/messages/en.json";
+import plMessages from "@/i18n/messages/pl.json";
 
 export function Footer() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
-  const messages = locale === 'en' ? enMessages : plMessages;
+  const messages = locale === "en" ? enMessages : plMessages;
   const m = messages.footer;
   const nav = messages.nav;
 
-  const exploreLinks = [
-    ['/', nav.home],
-    ['/horses', nav.horses],
-    ['/facilities', nav.facilities],
-    ['/team', nav.team],
-    ['/contact', nav.contact],
-  ] as const;
+  const exploreLinks = siteNavItems.map(({ path, labelKey }) => [
+    path,
+    nav[labelKey],
+  ] as const);
 
   return (
     <footer className="bg-blue-dark px-10 lg:px-16 pt-16 pb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-8 lg:gap-12 mb-12 pb-12 border-b border-gold/15">
         <div>
           <Link
-            href={localizePath('/', locale)}
+            href={localizePath("/", locale)}
             className="font-serif text-[1.6rem] font-semibold text-cream no-underline block mb-3"
           >
             JK<span className="text-gold">Warszawa</span>
@@ -62,7 +60,7 @@ export function Footer() {
             [
               [
                 messages.contact.info.address.label,
-                messages.contact.info.address.value.replace(/\n/g, ', '),
+                messages.contact.info.address.value.replace(/\n/g, ", "),
               ],
               [
                 messages.contact.info.phone.label,

@@ -5,15 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useIntl } from "react-intl";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { siteNavItems, siteNavMessageId } from "@/config/siteNav";
 import { localizePath, stripLocaleFromPathname } from "@/i18n/routing";
-
-const navPaths = [
-  { path: "/", id: "nav.home" },
-  { path: "/horses", id: "nav.horses" },
-  { path: "/facilities", id: "nav.facilities" },
-  { path: "/team", id: "nav.team" },
-  { path: "/contact", id: "nav.contact" },
-] as const;
 
 export function Nav() {
   const pathname = usePathname();
@@ -37,10 +30,10 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  const links = navPaths.map(({ path, id }) => ({
+  const links = siteNavItems.map(({ path, labelKey }) => ({
     href: localizePath(path, locale),
     path,
-    label: formatMessage({ id }),
+    label: formatMessage({ id: siteNavMessageId(labelKey) }),
   }));
 
   const solid = !isHome || scrolled;
