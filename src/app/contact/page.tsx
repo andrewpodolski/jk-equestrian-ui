@@ -10,13 +10,7 @@ async function ContactPageContent({ locale }: { locale: Locale }) {
     <>
       {/* ── Page Hero ── */}
       <section className="relative pt-48 pb-24 bg-blue-dark overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 50% 40%, #C9A84C 0%, transparent 65%)",
-          }}
-        />
+        <div className="absolute inset-0 opacity-10 hero-glow" />
         <div className="relative z-10 max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>
             <p className="eyebrow-line flex items-center gap-3 text-[0.65rem] tracking-[0.25em] uppercase text-gold mb-6">

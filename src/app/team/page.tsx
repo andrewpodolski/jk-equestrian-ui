@@ -18,11 +18,8 @@ async function TeamPageContent({ locale }: { locale: Locale }) {
       {/* ── Page Hero ── */}
       <section className="relative pt-48 pb-24 bg-blue-dark overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 60% 40%, #C9A84C 0%, transparent 65%)",
-          }}
+          className="absolute inset-0 opacity-10 hero-glow"
+          style={{ "--hero-glow-x": "60%", "--hero-glow-y": "40%" } as React.CSSProperties}
         />
         <div className="relative z-10 max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>

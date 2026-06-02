@@ -2,17 +2,20 @@
 
 /* ── Design tokens ──────────────────────────────────── */
 @theme {
-  --color-blue-dark:  #03396c;
-  --color-blue-mid:   #04508f;
-  --color-blue-soft:  #1a6aab;
-  --color-cream:      #F5EFE0;
-  --color-cream-dark: #E8DFCA;
-  --color-offwhite:   #FAFAF5;
-  --color-gold:       #C9A84C;
-  --color-gold-light: #E2C97A;
-  --color-text-dark:  #0e1e2e;
-  --color-text-mid:   #3a4a5a;
-  --color-text-muted: #6a7a8a;
+  --color-blue-dark:    #03396c;
+  --color-blue-mid:     #04508f;
+  --color-blue-soft:    #1a6aab;
+  --color-blue-deep:    #0a3d6e;
+  --color-blue-bright:  #0d5fa8;
+  --color-cream:        #F5EFE0;
+  --color-cream-dark:   #E8DFCA;
+  --color-offwhite:     #FAFAF5;
+  --color-surface-card: #FFFFFF;
+  --color-gold:         #C9A84C;
+  --color-gold-light:   #E2C97A;
+  --color-text-dark:    #0e1e2e;
+  --color-text-mid:     #3a4a5a;
+  --color-text-muted:   #6a7a8a;
 
   --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
   --font-sans:  var(--font-dm-sans),   'DM Sans', system-ui, sans-serif;
@@ -59,4 +62,38 @@ body {
   width: 28px;
   height: 1px;
   background: currentColor;
+}
+
+/* ── Gradient presets ───────────────────────────────── */
+.bg-gradient-hero {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-blue-dark),
+    var(--color-blue-mid),
+    var(--color-blue-deep)
+  );
+}
+
+.bg-gradient-card {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-blue-dark),
+    var(--color-blue-mid)
+  );
+}
+
+.hero-glow {
+  background-image: radial-gradient(
+    var(--hero-glow-shape, ellipse) at var(--hero-glow-x, 50%) var(--hero-glow-y, 40%),
+    var(--color-gold) 0%,
+    transparent 65%
+  );
+}
+
+.hero-glow-home {
+  background-image: radial-gradient(
+    circle at 30% 60%,
+    color-mix(in srgb, var(--color-gold) 13%, transparent) 0%,
+    transparent 60%
+  );
 }

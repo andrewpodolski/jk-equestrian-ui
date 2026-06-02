@@ -27,14 +27,8 @@ async function HomePageContent({ locale }: { locale: Locale }) {
       {/* ── Hero ── */}
       <section className="relative min-h-[100svh] overflow-hidden md:min-h-screen md:flex md:items-end md:pb-24 lg:pb-32">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-dark via-blue-mid to-[#0a3d6e]" />
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 30% 60%, #C9A84C22 0%, transparent 60%)",
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 opacity-20 hero-glow-home" />
         {/* Scroll indicator — desktop */}
         <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex lg:bottom-8">
           <span className="text-[0.6rem] tracking-[0.25em] uppercase text-cream/40">
@@ -258,7 +252,7 @@ async function HomePageContent({ locale }: { locale: Locale }) {
         <FadeUp>
           <div className="max-w-3xl mx-auto px-10 lg:px-16 text-center">
             <div className="font-serif text-[4rem] text-gold/30 leading-none mb-4">
-              "
+              &ldquo;
             </div>
             <blockquote className="font-serif text-[clamp(1.4rem,3vw,2rem)] font-light italic text-cream/85 leading-[1.55] mb-8">
               {m.quote.text}

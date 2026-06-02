@@ -10,8 +10,8 @@ async function FacilitiesPageContent({ locale }: { locale: Locale }) {
 
   const mainFacilities = [
     { data: m.indoor, gradient: "from-blue-dark to-blue-mid" },
-    { data: m.outdoor, gradient: "from-[#0a3d6e] to-blue-soft" },
-    { data: m.stables, gradient: "from-blue-mid to-[#0d5fa8]" },
+    { data: m.outdoor, gradient: "from-blue-deep to-blue-soft" },
+    { data: m.stables, gradient: "from-blue-mid to-blue-bright" },
   ];
 
   const amenities = [
@@ -28,11 +28,8 @@ async function FacilitiesPageContent({ locale }: { locale: Locale }) {
       {/* ── Page Hero ── */}
       <section className="relative pt-48 pb-24 bg-blue-dark overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 30% 50%, #C9A84C 0%, transparent 65%)",
-          }}
+          className="absolute inset-0 opacity-10 hero-glow"
+          style={{ "--hero-glow-x": "30%", "--hero-glow-y": "50%" } as React.CSSProperties}
         />
         <div className="relative z-10 max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>

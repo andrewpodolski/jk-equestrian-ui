@@ -93,11 +93,8 @@ export function HorsesPageClient({ messages: m }: Props) {
     <>
       <section className="relative pt-48 pb-24 bg-blue-dark overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              'radial-gradient(ellipse at 70% 50%, #C9A84C 0%, transparent 65%)',
-          }}
+          className="absolute inset-0 opacity-10 hero-glow"
+          style={{ "--hero-glow-x": "70%", "--hero-glow-y": "50%" } as React.CSSProperties}
         />
         <div className="relative z-10 max-w-6xl mx-auto px-10 lg:px-16">
           <FadeUp>
@@ -155,7 +152,7 @@ export function HorsesPageClient({ messages: m }: Props) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
             {filteredHorses.map((horse) => (
               <FadeUp key={horse.key} threshold={0.05}>
-                <article className="group bg-white rounded-[2px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-400">
+                <article className="group bg-surface-card rounded-[2px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-400">
                   <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-blue-dark to-blue-mid overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <span className="font-serif text-[5rem] text-cream/15 select-none">
