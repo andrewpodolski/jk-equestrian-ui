@@ -28,7 +28,7 @@ async function ContactPageContent({ locale }: { locale: Locale }) {
       </section>
 
       {/* ── Two-column layout ── */}
-      <section className="bg-offwhite py-24 lg:py-32">
+      <section className="bg-offwhite py-2 lg:py-4">
         <div className="max-w-6xl mx-auto px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-16 lg:gap-20">
           {/* Info column */}
           <FadeUp threshold={0.1}>
@@ -134,9 +134,9 @@ async function ContactPageContent({ locale }: { locale: Locale }) {
 }
 
 export default function ContactPage() {
-  return ContactPageContent({ locale: 'pl' });
+  return ContactPageContent({ locale: "pl" });
 }
 
 export function EnContactPage() {
-  return ContactPageContent({ locale: 'en' });
+  return ContactPageContent({ locale: "en" });
 }
