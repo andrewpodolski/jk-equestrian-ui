@@ -14,19 +14,20 @@
     "titleEmphasis": "pasje",
     "titleSuffix": " spotyka siodło",
     "subtitle": "W sercu mazowieckiej wsi, tuż na południe od Warszawy, RK Warszawa od ponad 25 lat jest domem dla jeźdźców w każdym wieku i na każdym poziomie zaawansowania. Od pierwszej lekcji dziecka po szlifowanie warsztatu doświadczonego zawodnika — tu zaczyna się prawdziwa jeździecka przygoda.",
-    "ctaPrimary": "Poznaj nasze konie",
+    "ctaPrimary": "Poznaj nasze oferty",
     "ctaSecondary": "Zwiedzaj infrastrukturę",
-    "scrollHint": "Przewiń"
+    "scrollHint": "Przewiń",
+    "imageAlt": "Koń kasztanowaty i jeździec w locie nad przeszkodą podczas zawodów skokowych"
   },
   "stats": {
     "horses": "Koni",
     "horsesCount": "40+",
     "experience": "Lat doświadczenia",
     "experienceCount": "25+",
-    "trainers": "Instruktorów",
-    "trainersCount": "8",
+    "trainers": "Instruktorzy",
+    "trainersCount": "2",
     "arenas": "Ujeżdżalnie",
-    "arenasCount": "3"
+    "arenasCount": "2"
   },
   "about": {
     "eyebrow": "Nasza historia",

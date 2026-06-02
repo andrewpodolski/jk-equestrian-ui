@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LocaleLink } from "@/components/ui/LocaleLink";
 import { FadeUp } from "@/components/ui/FadeUp";
 import type { Locale } from "@/i18n/config";
@@ -22,8 +23,16 @@ async function HomePageContent({ locale }: { locale: Locale }) {
     <>
       {/* ── Hero ── */}
       <section className="relative min-h-[100svh] overflow-hidden md:min-h-screen md:flex md:items-end md:pb-24 lg:pb-32">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <Image
+          src="/hero.png"
+          alt={m.hero.imageAlt}
+          fill
+          priority
+          className="object-cover object-[70%_center] md:object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-dark/95 via-blue-dark/75 to-blue-dark/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-dark/90 via-blue-dark/20 to-blue-dark/50" />
         <div className="absolute inset-0 opacity-20 hero-glow-home" />
         {/* Scroll indicator — desktop */}
         <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex lg:bottom-8">
@@ -54,7 +63,7 @@ async function HomePageContent({ locale }: { locale: Locale }) {
           <FadeUp threshold={0.05}>
             <div className="flex flex-wrap gap-4">
               <LocaleLink
-                href="/horses"
+                href="/offer"
                 className="inline-flex items-center gap-2 text-[0.78rem] tracking-[0.12em] uppercase font-medium text-blue-dark bg-gold hover:bg-gold-light px-8 py-4 rounded-[2px] transition-colors duration-200 no-underline"
               >
                 {m.hero.ctaPrimary}

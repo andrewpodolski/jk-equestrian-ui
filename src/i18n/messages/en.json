@@ -16,7 +16,8 @@
     "subtitle": "In the heart of the Masovian countryside, just south of Warsaw, RK Warszawa has been home to riders of all ages and skill levels for over 25 years. From a child’s first lesson to refining the skills of experienced competitors — this is where a true equestrian journey begins.",
     "ctaPrimary": "Meet Our Horses",
     "ctaSecondary": "Explore the Facilities",
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "imageAlt": "Bay horse and rider mid-air clearing a show jumping obstacle"
   },
   "stats": {
     "horses": "Horses",
@@ -24,9 +25,9 @@
     "experience": "Years of Experience",
     "experienceCount": "25+",
     "trainers": "Instructors",
-    "trainersCount": "8",
+    "trainersCount": "2",
     "arenas": "Riding Arenas",
-    "arenasCount": "3"
+    "arenasCount": "2"
   },
   "about": {
     "eyebrow": "Our Story",
