@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { localizePath, getLocaleFromPathname } from "@/i18n/routing";
 import { siteNavItems } from "@/config/siteNav";
+import { SITE_GOOGLE_MAPS_URL } from "@/config/siteContact";
 import enMessages from "@/i18n/messages/en.json";
 import plMessages from "@/i18n/messages/pl.json";
 
@@ -17,6 +18,44 @@ export function Footer() {
   const exploreLinks = siteNavItems.map(
     ({ path, labelKey }) => [path, nav[labelKey]] as const,
   );
+
+  const { info } = messages.contact;
+  const addressDisplay = info.address.value.replace(/\n/g, ", ");
+  const contactItems: {
+    label: string;
+    value: string;
+    href?: string;
+    external?: boolean;
+  }[] = [
+    {
+      label: info.address.label,
+      value: addressDisplay,
+      href: SITE_GOOGLE_MAPS_URL,
+      external: true,
+    },
+    {
+      label: info.phone.label,
+      value: info.phone.value,
+      href: `tel:${info.phone.value.replace(/\s/g, "")}`,
+    },
+    {
+      label: info.phone2.label,
+      value: info.phone2.value,
+      href: `tel:${info.phone2.value.replace(/\s/g, "")}`,
+    },
+    {
+      label: info.email.label,
+      value: info.email.value,
+      href: `mailto:${info.email.value}`,
+    },
+    {
+      label: info.hours.label,
+      value: `${info.hours.weekdays} ${info.hours.weekdayHours} / ${info.hours.weekend} ${info.hours.weekendHours}`,
+    },
+  ];
+
+  const linkClassName =
+    "text-[0.85rem] text-cream/55 font-light no-underline transition-colors duration-200 hover:text-cream";
 
   return (
     <footer className="bg-blue-dark px-10 lg:px-16 pt-16 pb-8">
@@ -55,37 +94,26 @@ export function Footer() {
           <p className="text-[0.65rem] tracking-[0.2em] uppercase text-gold mb-5">
             {m.contact}
           </p>
-          {(
-            [
-              [
-                messages.contact.info.address.label,
-                messages.contact.info.address.value.replace(/\n/g, ", "),
-              ],
-              [
-                messages.contact.info.phone.label,
-                messages.contact.info.phone.value,
-              ],
-              [
-                messages.contact.info.phone2.label,
-                messages.contact.info.phone2.value,
-              ],
-              [
-                messages.contact.info.email.label,
-                messages.contact.info.email.value,
-              ],
-              [
-                messages.contact.info.hours.label,
-                `${messages.contact.info.hours.weekdays} ${messages.contact.info.hours.weekdayHours} / ${messages.contact.info.hours.weekend} ${messages.contact.info.hours.weekendHours}`,
-              ],
-            ] as [string, string][]
-          ).map(([label, val]) => (
-            <div key={label} className="flex flex-col mb-3">
+          {contactItems.map((item) => (
+            <div key={item.label} className="flex flex-col mb-3">
               <span className="text-[0.65rem] tracking-[0.14em] uppercase text-cream/30 mb-[0.15rem]">
-                {label}
+                {item.label}
               </span>
-              <span className="text-[0.85rem] text-cream/55 font-light">
-                {val}
-              </span>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  className={linkClassName}
+                  {...(item.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                >
+                  {item.value}
+                </a>
+              ) : (
+                <span className="text-[0.85rem] text-cream/55 font-light">
+                  {item.value}
+                </span>
+              )}
             </div>
           ))}
         </div>
