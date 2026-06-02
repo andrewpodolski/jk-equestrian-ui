@@ -17,11 +17,7 @@ async function HomePageContent({ locale }: { locale: Locale }) {
     m.horses.cleo,
   ];
 
-  const trainers = [
-    m.team.trainers.anna,
-    m.team.trainers.marek,
-    m.team.trainers.zofia,
-  ];
+  const trainers = [m.team.trainers.robert, m.team.trainers.matylda];
   return (
     <>
       {/* ── Hero ── */}
@@ -214,7 +210,7 @@ async function HomePageContent({ locale }: { locale: Locale }) {
             </div>
           </FadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
             {trainers.map((trainer) => (
               <FadeUp key={trainer.name} threshold={0.05}>
                 <div className="text-center">
